@@ -2,7 +2,8 @@
     // Extend PATH to include ./xmScripts, so that 'xmlatex' is found even when not in a xake dockercontainer.
     //   ( INSIDE a xake container, /usr/local/bin/xmlatex will and should be found!!!)
     "terminal.integrated.env.linux": {
-        "PATH": "${env:PATH}:${workspaceFolder}/xmScripts"
+        "PATH": "${env:PATH}:${workspaceFolder}/xmScripts",
+        "DOCKER_DEFAULT_PLATFORM": "linux/amd64",
     },
     // // No possibility to extend PATH ...?
     // "latex-workshop.latex.external.build.command": "xmlatex",
