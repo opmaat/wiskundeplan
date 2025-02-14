@@ -24,8 +24,8 @@ We tekenen het complexe getal $z$ met cartesische coördinaten en met poolcoörd
      
     % Goniometrische cirkel
     %   \draw (0,0) circle (1cm);
-    \draw[-&gt;] (-0.1,0) -- (1.3,0) node[above] {Re$(z)$};
-    \draw[-&gt;] (0,-0.1) -- (0,0.9) node[below right] {Im$(z)$};
+    \draw[->] (-0.1,0) -- (1.3,0) node[above] {Re$(z)$};
+    \draw[->] (0,-0.1) -- (0,0.9) node[below right] {Im$(z)$};
      
     \draw[color=blue,thick] (0:0)  -- node[right] {\small$r=|z|=\sqrt{a^2+b^2}$} (\hoek:1);
     %
@@ -33,7 +33,7 @@ We tekenen het complexe getal $z$ met cartesische coördinaten en met poolcoörd
     %
     \draw[dashed] ({cos(\hoek)},0) node[circle, fill=black, radius=1pt,scale=0.5] {} node[below] {\color{red}$a=r\cos\theta$} -- (P);
     \draw[dashed] (0,{sin(\hoek)}) node[circle, fill=black, radius=1pt,scale=0.5] {} node[left] {\color{red}$b=r\sin\theta$} -- (P);
-    \draw[color=blue, -&gt;] (0.3,0) arc (0:\hoek:0.3cm) node [midway,right] {$\theta$ met $\tan\theta = \frac ba$};  
+    \draw[color=blue, ->] (0.3,0) arc (0:\hoek:0.3cm) node [midway,right] {$\theta$ met $\tan\theta = \frac ba$};  
      
     \end{tikzpicture}
 \end{image}
@@ -135,11 +135,11 @@ Het blijkt dat sommige berekeningen eenvoudiger zijn in de cartesische schrijfwi
     $$
     \tan \theta = \frac{b}{a}  \quad \text{ als } a \neq 0
     $$
-    Als $a &gt;0$ dan is $\theta$ een hoek in het 1ste of het 4de kwadrant en is dus per definitie van de \hyperref[xim:cyclometrische_functies]{boogtangens }
+    Als $a>0$ dan is $\theta$ een hoek in het 1ste of het 4de kwadrant en is dus per definitie van de \hyperref[xim:cyclometrische_functies]{boogtangens }
     $$
     \theta  =  \bgtan \left(\frac{b}{a}\right) \quad \text{ als }  a>0
     $$
-    Als $a&lt;0$ dan is $\theta$ een hoek in het 2de of het 3de kwadrant en dan geldt
+    Als $a<0$ dan is $\theta$ een hoek in het 2de of het 3de kwadrant en dan geldt
     $$
     \theta  =  \bgtan \left(\frac{b}{a}\right) + \pi \quad \text{ als }  a<0
     $$
@@ -228,7 +228,7 @@ Stel dat het complexe getal $z$ modulus $r$ en argument $\theta$ heeft. Dan is d
 Uiteraard bestaat de inverse dus niet voor het complex getal nul. Voor $z\neq 0$, met $(r, \theta)$ als poolcoördinaten, is de inverse inderdaad het complex getal $w$ met poolcoördinaten $\left(\frac{1}{r}, -\theta\right)$: de modulus van het product van complexe getallen is het product van de moduli, terwijl het argument van het product van complexe getallen de som van de argumenten is. Dus $z\cdot w$ heeft modulus 1, en argument 0: dit zijn precies de poolcoördinaten van het getal 1.
 \end{xmuitweiding}
  
-%Indien de cartesiaanse vorm gegeven is, kan de modulus bepaald worden met de stelling van Pythagoras, en de hoek $\theta$ in de rechthoekige driehoek met rechthoekszijden $|a|$ en $|b|$. Merk op dat voor $a&lt;0$, het complex getal in het tweede of derde kwadrant ligt. 
+%Indien de cartesiaanse vorm gegeven is, kan de modulus bepaald worden met de stelling van Pythagoras, en de hoek $\theta$ in de rechthoekige driehoek met rechthoekszijden $|a|$ en $|b|$. Merk op dat voor $a<0$, het complex getal in het tweede of derde kwadrant ligt. 
 %Aangezien $\arctan$ per definitie steeds als resultaat een hoek in het interval $]-\pi/2,\pi/2[$ geeft, dient  in de uitdrukking voor het argument $\theta$ een term $\pi$ toegevoegd te worden om correct te zijn.
 %Als $|a|$ of $|b|$ gelijk is aan 0, redeneer je niet in een driehoek, maar ligt het complex getal op \'e\'en van de assen en kan je het argument $\theta$ onmiddellijk aflezen op een figuur.
  
