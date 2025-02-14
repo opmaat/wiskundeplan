@@ -81,41 +81,16 @@ De reële getallen vormen een rechte waarbij met elk punt met een reëel getal o
     \draw  [draw opacity=1 ] (103,92.5) .. controls (103,60.74) and (175.31,35) .. (264.5,35) .. controls (353.69,35) and (426,60.74) .. (426,92.5) .. controls (426,124.26) and (353.69,150) .. (264.5,150) .. controls (175.31,150) and (103,124.26) .. (103,92.5) -- cycle ;
     %Shape: Ellipse [id:dp715353025232164] 
     \draw  [draw opacity=1 ] (28,91.5) .. controls (28,54.77) and (119.56,25) .. (232.5,25) .. controls (345.44,25) and (437,54.77) .. (437,91.5) .. controls (437,128.23) and (345.44,158) .. (232.5,158) .. controls (119.56,158) and (28,128.23) .. (28,91.5) -- cycle ;
-    %Rounded Rect [id:dp4008700042872797] 
-    \draw  [draw opacity=1 ][line width=2.25]  (21,44.7) .. controls (21,27.47) and (34.97,13.5) .. (52.2,13.5) -- (503.8,13.5) .. controls (521.03,13.5) and (535,27.47) .. (535,44.7) -- (535,138.3) .. controls (535,155.53) and (521.03,169.5) .. (503.8,169.5) -- (52.2,169.5) .. controls (34.97,169.5) and (21,155.53) .. (21,138.3) -- cycle ;
     
     % Text Node
     \draw (292,74.4) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE]  {$\mathbb{N}$};
     \draw (195,75.4) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE]  {$\mathbb{Z}$};
     \draw (125,74.4) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE]  {$\mathbb{Q}$};
-    \draw ( 62,76.4) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE]  {$\mathbb{R}$};
-    \draw (487,32.4) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE]  {$\mathbb{C}$};
-    
+    \draw ( 62,76.4) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE]  {$\mathbb{R}$};    
     
     \end{tikzpicture}
 \end{image}    
 
-
-\begin{image}
-    \begin{tikzpicture}
-    % Ellipse for real numbers R
-    \draw[thick] (3,0) ellipse (5.25cm and 1.6cm) node[right=5.25cm] {\Large $\mathbb{R}$};
-    
-    % Ellipse for rational numbers Q
-    \draw[thick] (2,0) ellipse (4cm and 1.4cm) node[right=4cm] {\Large $\mathbb{Q}$};
-    
-    % Ellipse for integers Z
-    \draw[thick] (1,0) ellipse (2.75cm and 1.2cm) node[right=2.75cm] {\Large $\mathbb{Z}$};
-    
-    % Ellipse for natural numbers N
-    \draw[thick] (0,0) ellipse (1.5cm and 0.8cm) node[right=1.5cm] {\Large $\mathbb{N}$};
-        
-    \end{tikzpicture}
-\end{image}
-
-
-%voorlopig hebben we hier niet de opbouw van de verschillende venndiagrammen etc. 
-% Indien dit erg goed is kunnen we die wel nog invoegen opzich. 
 
 
 In het vierde jaar heb je geleerd hoe je de tweedegraadsvergelijking \(ax^2 + bx + c = 0\) kan oplossen. 
@@ -142,6 +117,8 @@ De grafiek van deze functie heeft geen snijpunten met de x-as.
             % Plot the parabola
             \addplot[blue, thick, domain=-3:1, samples=100] {x^2 + 2*x + 5};
             % Add a node for the vertex
+            \draw (-3, 4) node [anchor=north west][inner sep=0.75pt]  [font=\small]  {$y=x^2+2x+5$};
+
         \end{axis}
     \end{tikzpicture}
 \end{image}
@@ -153,16 +130,52 @@ De grafiek van deze functie heeft geen snijpunten met de x-as.
 
 
 
-Je hebt geleerd dat de algemene oplossing voor een tweedegraadsvergelijking gegeven wordt door 
+Je hebt geleerd dat de algemene oplossingen voor een tweedegraadsvergelijking gegeven wordt door 
 \[  
-    x_{1,2} = \frac{-b +- \sqrt{D}}{2a}. 
+    x_{1} = \frac{-b + \sqrt{D}}{2a}. 
 \]
+
+\[  
+    x_{2} = \frac{-b - \sqrt{D}}{2a}. 
+\]
+
 Misschien is de formule toch zinvol? Rekenen met de negatieve discriminant geeft:
 
 \[ x_{1,2} = \frac{-2 +- \sqrt{-16}}{2} = \frac{-2 +- 4\sqrt{-1}}{2} = -1 +- 2\sqrt{-1}\]. 
 
-In deze 'mogelijke oplossing' staat \(\sqrt{-1}\). Omdat er geen reëel getal is met als vierkantswortel -1, is er voor deze vergelijking geen oplossing in \(\R\). In de uitbreiding van de natuurlijke getallen \(N\) tot de reële getallen \(R\) werd de verzameling getallen telkens uitgebreid als er geen oplossing was. In dit hoofdstuk worden de reële getallen \(\R\) uitgebreid door een nieuw getal \(i\) toe te voegen met de eigenschap dat \(i^2 = -1\). Dit zijn de complexe getallen \(\C\). De tweedegraadsvergelijking \(x^2 + 2x + 5 = 0\) heeft dan wel oplossingen in de complexe getallen: \(-1 + 2i\)  en  \(-1-2i\).
+In deze 'mogelijke oplossing' staat \(\sqrt{-1}\). Omdat er geen reëel getal is met als vierkantswortel -1, heeft deze vergelijking geen oplossing in de reële getallen \(\R\). In de uitbreiding van de natuurlijke getallen \(\N\) tot de reële getallen \(\R\) werd de verzameling getallen telkens uitgebreid indien er geen oplossing was. In dit hoofdstuk worden de reële getallen \(\R\) verder uitgebreid door een nieuw getal \(i\) toe te voegen met de eigenschap dat \(i^2 = -1\). Dit zijn de complexe getallen \(\C\). De tweedegraadsvergelijking \(x^2 + 2x + 5 = 0\) heeft dan wel oplossingen in de complexe getallen: \(-1 + 2i\)  en  \(-1-2i\).
 
+Vandaag worden deze nieuwe 'complexe' getallen gebruikt bij het programmeren van computergames, bij het berekenen van elektronische schakelingen en in de kwantummechanica.
+
+\begin{image}[0.7\textwidth]
+    % BRON: Ingmar !
+
+    \tikzset{every picture/.style={line width=0.75pt}} %set default line width to 0.75pt        
+    
+    \begin{tikzpicture}[x=0.75pt,y=0.75pt,yscale=-1,xscale=1]
+    %uncomment if require: \path (0,172); %set diagram left start at 0, and has height of 172
+    
+    %Shape: Ellipse [id:dp7922358117606259] 
+    \draw  [draw opacity=1 ] (230,92) .. controls (230,71.57) and (266.04,55) .. (310.5,55) .. controls (354.96,55) and (391,71.57) .. (391,92) .. controls (391,112.43) and (354.96,129) .. (310.5,129) .. controls (266.04,129) and (230,112.43) .. (230,92) -- cycle ;
+    %Shape: Ellipse [id:dp27778820345068733] 
+    \draw  [draw opacity=1 ] (163,91.5) .. controls (163,66.37) and (218.52,46) .. (287,46) .. controls (355.48,46) and (411,66.37) .. (411,91.5) .. controls (411,116.63) and (355.48,137) .. (287,137) .. controls (218.52,137) and (163,116.63) .. (163,91.5) -- cycle ;
+    %Shape: Ellipse [id:dp2930830644400444] 
+    \draw  [draw opacity=1 ] (103,92.5) .. controls (103,60.74) and (175.31,35) .. (264.5,35) .. controls (353.69,35) and (426,60.74) .. (426,92.5) .. controls (426,124.26) and (353.69,150) .. (264.5,150) .. controls (175.31,150) and (103,124.26) .. (103,92.5) -- cycle ;
+    %Shape: Ellipse [id:dp715353025232164] 
+    \draw  [draw opacity=1 ] (28,91.5) .. controls (28,54.77) and (119.56,25) .. (232.5,25) .. controls (345.44,25) and (437,54.77) .. (437,91.5) .. controls (437,128.23) and (345.44,158) .. (232.5,158) .. controls (119.56,158) and (28,128.23) .. (28,91.5) -- cycle ;
+    %Rounded Rect [id:dp4008700042872797] 
+    \draw  [draw opacity=1 ][line width=2.25]  (21,44.7) .. controls (21,27.47) and (34.97,13.5) .. (52.2,13.5) -- (503.8,13.5) .. controls (521.03,13.5) and (535,27.47) .. (535,44.7) -- (535,138.3) .. controls (535,155.53) and (521.03,169.5) .. (503.8,169.5) -- (52.2,169.5) .. controls (34.97,169.5) and (21,155.53) .. (21,138.3) -- cycle ;
+    
+    % Text Node
+    \draw (292,74.4) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE]  {$\mathbb{N}$};
+    \draw (195,75.4) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE]  {$\mathbb{Z}$};
+    \draw (125,74.4) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE]  {$\mathbb{Q}$};
+    \draw ( 62,76.4) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE]  {$\mathbb{R}$};
+    \draw (487,32.4) node [anchor=north west][inner sep=0.75pt]  [font=\LARGE]  {$\mathbb{C}$};
+    
+    
+    \end{tikzpicture}
+\end{image}  
 
 
 \end{document}
