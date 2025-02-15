@@ -49,8 +49,28 @@ Zonder de breuk \(x = \frac{-4}{3}\) is deze vergelijking niet oplosbaar.
 
 Je merkt al snel dat je nog niet 'genoeg' getallen hebt. 
 De stelling van Pythagoras 
-leert ons dat de schuine zijde in onderstaande rechthoekige driehoek lengte \( \sqrt{2}\) heeft. 
-Met een kort bewijs (online pdf; Ximera) kan je aantonen dat \(\sqrt{2}\) niet in de verzameling rationale getallen zit, dus dat 
+leert ons dat de schuine zijde van onderstaande driehoek lengte \( \sqrt{2}\) heeft. 
+
+
+\begin{image}[3cm]
+    
+    \begin{tikzpicture}[scale=2]
+        % Define the vertices of the triangle
+        \coordinate (A) at (0,0);
+        \coordinate (B) at (1,0);
+        \coordinate (C) at (0,1);
+        % Draw the triangle
+        \draw (A) -- (B) -- (C) -- cycle;
+        
+        % Label the hypotenuse with sqrt(2)
+        \node at ($(B)!0.5!(C)$) [above right] {$\sqrt{2}$};
+        \node at ($(A)!0.5!(B)$) [below] {$1$};
+        \node at ($(A)!0.5!(C)$) [left] {$1$};
+        
+    \end{tikzpicture}
+\end{image}
+    
+Met een kort bewijs kan men aantonen dat \(\sqrt{2}\) niet in de verzameling rationale getallen zit, dus dat 
 \[\sqrt{2} = 1.4142135623730950488016887242096980785696718753769480731766797\ldots%379907324784621070388503875343276...
 \]  
 niet te schrijven is als een breuk!. 
@@ -102,10 +122,13 @@ De reële getallen vormen een rechte waarbij met elk punt met een reëel getal o
     Heron van Alexandrië berekende de hoogte van de afgeplatte piramide met volgende afmetingen: b = 28, a = 4 en c = 15. 
     \textbf{Ga Heron van Alexandrië achterna en voer deze berekening uit, valt er je iets op aan het eindresultaat? }
 
+    \begin{image}[0.4\textwidth]
+        \includegraphics{Heron_pyramide.png}   
+    \end{image}
+
+
 \end{exercise}
 
-% TODO foto invoegen pyramide 
-% TODO foto invoegen Heron van Alexandrië
 
 
 \begin{denkvraag*}{}
