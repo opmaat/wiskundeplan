@@ -3,7 +3,7 @@
 \addPrintStyle{..}
 \begin{document}
     \author{Wiskunde Op Maat }
-    \xmtitle{De goniometrische schrijfwijze van complexe getallen}{}
+    \xmtitle{De polaire schrijfwijze van complexe getallen}{}
      
     \label{xim:complexe_getallen_polair}  % goniometrisch ???
  
@@ -17,13 +17,11 @@ In het vorig hoofdstuk werd een punt in het complexe vlak beschreven met behulp 
 \end{quickquestion*}
 
  
-complexe getallen in Polaire vorm  (insert title)
-
 De carthesische schrijfwijze associeert met een elk complex getal $z=a+bi$ het koppel \((a, b)\). Het reeël deel \(a\) komt overeen met de projectie op de reële as, het imaginair deel \(b\) komt overeen met de projectie op de imaginaire as. De polaire vorm associeert met elk complex getal in het vlak een koppel poolcoördinaten \((r, \theta)\).  Hierbij is $r=|z|$ de norm (afstand tot de oorsprong) en $\theta$ de hoek die de overeenkomstige vector maakt met de positieve reële as. Op die manier wordt elk complex getal beschreven met een uniek koppel poolcoordinaten. 
 
 
 \begin{definition}
-    Het koppel $(r,\theta)$ zijn de \textit{poolcoördinaten} van het punt $z$. We noemen $r=|z|$ de \textbf{modulus} en $\theta$ het \textbf{argument}. De hoek $\theta$ wordt gemeten in radialen, in tegenwijzerzin, en is slechts op een veelvoud van $2\pi$ na bepaald.
+    De \textit{poolcoördinaten} van een complex getal zijn het koppel \((r, \theta)\), hierbij is $r=|z|$ de \textbf{modulus} en $\theta$ het \textbf{argument}. De hoek $\theta$ wordt gemeten in radialen, in tegenwijzerzin, en is slechts op een veelvoud van $2\pi$ na bepaald.
 
     \begin{image}%[\textwidth]
        \begin{tikzpicture}[scale=5]%,cap=round,transform canvas={scale=0.5}]
@@ -47,6 +45,8 @@ De carthesische schrijfwijze associeert met een elk complex getal $z=a+bi$ het k
        \end{tikzpicture}
     
     \end{image}
+
+    Op die manier krijgt elk complexe getal een polaire schrijfwijze \(z = r(\cos \theta + i\sin\theta)\)
 
 \end{definition}
 
@@ -190,104 +190,21 @@ Men kan een complexe getal in carthesische schrijfwijze $z=a+bi$ omvormen naar p
     -\frac{\pi}{2}           & \text{ als } a=0, b < 0
     \end{cases}
     $$
-    \begin{basicSkip}
-Dit alles wordt ook uitgelegd in onderstaande video:
- 
-\youtube{_qLKTopxSXc}
-\end{basicSkip}
+
+
  
 \end{remark}
 % Bron: SPOC Complexe Getallen https://tube.geogebra.org/material/iframe/id/NwzgUCQG/width/887/height/528/border/888888/rc/false/ai/false/sdz/false/smb/false/stb/false/stbh/true/ld/false/sri/false/at/auto
  
  
  
-\xmsection{Vermenigvuldiging van complexe getallen in goniometrische schrijfwijze}\nl
- 
-In de goniometrische schrijfwijze is het niet eenvoudig om complexe getallen op te tellen: hiervoor is de cartesische schrijfwijze veel makkelijker, omdat we dan gewoon reëel en imaginair deel bij elkaar moeten optellen. Voor de vermenigvuldiging van complexe getallen is het andersom: daarvoor is er de volgende interessante formule voor de goniometrische schrijfwijze:
- 
-Als $z_1=r_1 (\cos \theta_1 + i \sin \theta_1 ) $ en $z_2 = r_2(\cos \theta_2 + i \sin \theta_2 )$ twee complexe getallen zijn, dan is
-\begin{align*}
-z_1\cdot z_2 &= r_1 (\cos \theta_1 + i \sin \theta_1 )\cdot r_2 (\cos\theta_2 + i \sin \theta_2 )\\
-             &= r_1 r_2 (\cos \theta_1 \cos \theta_2 - \sin \theta_1  \sin\theta_2 + i(\sin \theta_1 \cos \theta_2 + \cos \theta_1  \sin
-\theta_2 ))\\
-             &= r_1 r_2 ( \cos(\theta_1 + \theta_2) + i \sin(\theta_1 + \theta_2)) \, ,
-\end{align*}
-waarbij we in de laatste stap gebruik hebben gemaakt van de \hyperref[xim:goniometrie_formules]{som- en verschilformules}.
-Dit betekent dat de moduli $r_i$ moeten worden vermenigvuldigd, en de argumenten $\theta_i$ moeten worden opgeteld.
- 
-\begin{proposition}[Vermenigvuldiging van twee complexe getallen in goniometrische schrijfwijze]\label{eig:vermenigvuldiging_complexe_getallen}\nl
-     
-De \textit{modulus} van het product van twee complexe getallen is het \textit{product van de moduli} van die getallen.
- 
-Het \textit{argument} van het product van twee complexe getallen is de \textit{som van de argumenten} van die getallen.
-\end{proposition}
- 
-\begin{xmuitweiding}[Vermenigvuldiging van 2 complexe getallen grafisch uitgelegd]
-We kunnen de vermenigvuldiging met een complex getal ook zien als een soort van actie die we doen op punten in het vlak. Als we een bepaald complex getal $z = r(\cos\theta + i \sin \theta)$ fixeren, en eender welk complex getal vermenigvuldigen met die $z$, dan tellen we steeds $\theta$ bij het argument van het complex getal op, en vermenigvuldigen we de modulus van dat complex getal steeds met $r$.
- 
-% Als je focust op het effect van vermenigvuldiging met één complex getal, krijg je %%% vind ik precies wat een vreemde zin?
-\begin{proposition}[Vermenigvuldiging met een complex getal in goniometrische schrijfwijze $z=r(\cos\theta + i\sin\theta)$]\nl
-     
-Vermenigvuldigen met $z = r(\cos\theta + i\sin\theta)$ betekent \textit{roteren} over een hoek $\theta$ en afstanden en lengtes \textit{herschalen} met een factor $r$.
-\end{proposition}
- 
-Je kan experimenteren met deze voorstelling van de vermenigvuldiging door in onderstaande applet de complexe getallen $z_1$ en $z_2$ te verslepen, en dan via de vermenigvuldig-knop te zien hoe vermenigvuldigen met $z_2 = (r,\theta)$ inderdaad kan beschouwd worden als een \textit{rotatie} over een hoek $\theta$ gevolgd door een \textit{herschaling} met een factor $r$.
- 
-\geogebra{i0Lbx90s}{893}{451}
-\end{xmuitweiding}
 
 
-\begin{exercise}
-    Teken devolgende complexe getallen \(z_1\) en \(z_2\) als punten van het complexe vlak. Bepaal zonder te rekenen waar haar het product \( z_1 z_2\) ligt. 
-    \begin{question} \(z_1 = 1+1\) \(z_2 = i\)    \end{question}
-    \begin{question} \(z_1 = 5\) \(z_2 = i - 1\)\end{question}
-    \begin{question} \(z_1 = 2 + 2i\) \(z_2 = -2 - 2i \) \end{question}
-\end{exercise}
 
- 
-% \begin{xmuitweiding}[Inverse van een complex getal met poolcoördinaten]
-% We zijn geïnteresseerd in het volgende probleem: stel dat je een complex getal $z$ hebt, met welk ander complex getal, zeg $w$, moet je $z$ vermenigvuldigen zodat het resultaat 1 geeft? Met andere woorden: hoe bepaal je de \textit{inverse} van een complex getal?
- 
-% Stel dat het complex getal $z$ zuiver reëel is, dus zodanig dat de cartesische schrijfwijze van $z$ van de vorm $z = a + 0i$ is. Dan is het makkelijk om te vinden wat de inverse is: door te vermenigvuldigen met $w = 1/a$ komen we op 1 uit. Het algemene geval is echter lastiger met cartesische coordinaten,
-% % als $z = a + bi$, en $w = c + di$, dan wordt de vergelijking $z\cdot w = 1$:
-% %$$
-% %z\cdot w = (a+bi)\cdot (c+di) = (ac -  bd) + (bc + ad)i = 1 + 0i \, .
-% %$$
-% %Dit komt neer op een stelsel van twee vergelijkingen in twee onbekenden:
-% %$$
-% %\begin{cases}
-% %ac - bd &= 1 \\
-% %bc + ad &= 0
-% %\end{cases}
-% %$$
-% maar zal makkelijker zijn met poolcoördinaten, aangezien het hier gaat over vermenigvuldigingen van complexe getallen. Als we de rekenregels voor het vermenigvuldigen van complexe getallen in goniometrische schrijfwijze in het achterhoofd houden, vinden we het volgende:
- 
-% \begin{proposition}
-% Stel dat het complexe getal $z$ modulus $r$ en argument $\theta$ heeft. Dan is de inverse van $z$ het complexe getal met modulus $1/r$ en argument $-\theta$. 
-% \end{proposition}
- 
-% Uiteraard bestaat de inverse dus niet voor het complex getal nul. Voor $z\neq 0$, met $(r, \theta)$ als poolcoördinaten, is de inverse inderdaad het complex getal $w$ met poolcoördinaten $\left(\frac{1}{r}, -\theta\right)$: de modulus van het product van complexe getallen is het product van de moduli, terwijl het argument van het product van complexe getallen de som van de argumenten is. Dus $z\cdot w$ heeft modulus 1, en argument 0: dit zijn precies de poolcoördinaten van het getal 1.
-% \end{xmuitweiding}
- 
-%Indien de cartesiaanse vorm gegeven is, kan de modulus bepaald worden met de stelling van Pythagoras, en de hoek $\theta$ in de rechthoekige driehoek met rechthoekszijden $|a|$ en $|b|$. Merk op dat voor $a<0$, het complex getal in het tweede of derde kwadrant ligt. 
-%Aangezien $\arctan$ per definitie steeds als resultaat een hoek in het interval $]-\pi/2,\pi/2[$ geeft, dient  in de uitdrukking voor het argument $\theta$ een term $\pi$ toegevoegd te worden om correct te zijn.
-%Als $|a|$ of $|b|$ gelijk is aan 0, redeneer je niet in een driehoek, maar ligt het complex getal op \'e\'en van de assen en kan je het argument $\theta$ onmiddellijk aflezen op een figuur.
- 
- 
-% verdere inhoud over complexe getallen uit Zomercursus 201x in kwadratische_vergelijking/veeltermen/...
- 
-%\begin{thebibliography}{9}
-%\bibitem{nieuwe delta} P. Gevers, J. Anseeuw, J. De Langhe, G. Roels, H. Vercauter,
-%\textit{Nieuwe Delta, 5/6 Complexe Getallen(6 - 8 uur)}, Leuven,
-%Wolters Plantyn, 1994.
-%\bibitem{Jennekens}E. Jennekens, G. Deen, \textit{Wiskunde '68, Wiskunde 5, Deel A, Matrices en
-%complexe getallen}, Antwerpen, De Sikkel, 1972.
-%\bibitem{Quaegebeur}
-%J. Quaegebeur, \textit{Basisbegrippen en basistechnieken uit de
-%wiskunde}, Leuven, Acco, 2004.
-%\bibitem{Croft}A. Croft and R. Davison, \textit{Mathematics for engineers}, Pearson Education Limited, third edition, 2008.
-%\end{thebibliography}
-%
-%\newpage
- 
+
+
+
+
+
+
 \end{document}
