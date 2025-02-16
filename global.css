@@ -1001,3 +1001,10 @@ img.brandlogo {
 .main-inhoud .activity {
 	 overflow-y: hidden; 
 }
+
+blockquote {
+	margin: 0 0 1rem;
+	background-color: lightgray;
+	padding: 2em;
+	margin-inline: 5em;
+}
