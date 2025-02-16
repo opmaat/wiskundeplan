@@ -109,5 +109,51 @@ Complexe getallen als punten in het complexe vlak zullen ook een meetkundige int
 
 
 
+\begin{exercise}
+    Schets in het complexe vlak de gebieden omschreven door volgende vergelijkingen:
+    \begin{question} 
+        $\text{Im}(z) \leq 0$
+        \begin{oplossing} Als $z=a+bi$, dan betekent Im$(z) \leq 0$ dat $b \leq 0$ en dat geeft het  halfvlak onder de $x$-as:
+            \begin{image}[0.2\textwidth]
+                \begin{tikzpicture}[scale=0.6]
+                \draw[dashed] (-4, -4) grid (4, 4);
+                
+                \draw[->, thick] (-4.2, 0) -- (4.2, 0) node[right] {Re$(z)$};
+                \draw[->, thick] (0, -4.2) -- (0, 4.2) node[above] {Im$(z)$};
+                
+                \draw[fill=blue, opacity=0.25] (-4.2,-4.2) rectangle (4.2,0);
+                
+                % randen toevoegen voor duidelijkheid 
+                \draw[blue, very thick] (-4.2,0) -- (4.2,0);
+                \end{tikzpicture}
+            \end{image}
+			
+        \end{oplossing}
+    \end{question}
+    
+    \begin{question} 
+        $0 \leq \text{Re}(z) \leq 2$
+        \begin{oplossing} Deze ongelijkheden bepalen een \textit{verticale} strook, aangezien het reële deel van het complex getal in een interval moet liggen. De randen van de strook behoren tot het geschetste domein.
+            
+            \begin{image}[0.2\textwidth]
+                \begin{tikzpicture}[scale=0.6]
+                \draw[dashed] (-4, -4) grid (4, 4);
+                
+                \draw[->, thick] (-4.2, 0) -- (4.2, 0) node[right] {Re$(z)$};
+                \draw[->, thick] (0, -4.2) -- (0, 4.2) node[above] {Im$(z)$};
+                
+                \draw[fill=blue, opacity=0.25] (0,4.2) rectangle (2, -4.2);
+                
+                % randen toevoegen voor duidelijkheid 
+                \draw[blue, very thick] (0, -4.2) -- (0, 4.2);
+                \draw[blue, very thick] (2, -4.2) -- (2, 4.2);
+                \end{tikzpicture}
+            \end{image}
+        \end{oplossing}            
+    \end{question}        
+\end{exercise}
+
+
+
 
 \end{document}

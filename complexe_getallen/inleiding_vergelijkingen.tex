@@ -44,11 +44,10 @@ Zonder de breuk \(x = \frac{-4}{3}\) is deze vergelijking niet oplosbaar.
 
 Je merkt al snel dat je nog niet 'genoeg' getallen hebt. 
 De stelling van Pythagoras 
-leert ons dat de schuine zijde van onderstaande driehoek lengte \( \sqrt{2}\) heeft. 
+leert ons dat de schuine zijde van de gegeven driehoek lengte \( \sqrt{2}\) heeft. 
 
 
-\begin{image}[3cm]
-    
+\begin{wrapfigure}{r}{3cm} 
     \begin{tikzpicture}[scale=2]
         % Define the vertices of the triangle
         \coordinate (A) at (0,0);
@@ -63,7 +62,7 @@ leert ons dat de schuine zijde van onderstaande driehoek lengte \( \sqrt{2}\) he
         \node at ($(A)!0.5!(C)$) [left] {$1$};
         
     \end{tikzpicture}
-\end{image}
+\end{wrapfigure}
     
 Met een kort bewijs kan men aantonen dat \(\sqrt{2}\) niet in de verzameling rationale getallen zit, dus dat 
 \[\sqrt{2} = 1.4142135623730950488016887242096980785696718753769480731766797\ldots%379907324784621070388503875343276...
@@ -161,6 +160,14 @@ Misschien is de formule toch zinvol? Rekenen met de negatieve discriminant geeft
 \[ x_{1,2} = \frac{-2 +- \sqrt{-16}}{2} = \frac{-2 +- 4\sqrt{-1}}{2} = -1 +- 2\sqrt{-1}\]. 
 
 In deze 'mogelijke oplossing' staat \(\sqrt{-1}\). Omdat er geen reëel getal is met als vierkantswortel -1, heeft deze vergelijking geen oplossing in de reële getallen \(\R\). Wanneer er voor een vergelijking geen oplossing was, werden hierboven steeds nieuwe getallen toegevoegd. In dit hoofdstuk worden de reële getallen \(\R\) verder uitgebreid tot de complexe getallen \(\C\) door een nieuw getal \(i\) toe te voegen met als eigenschap dat \(i^2 = -1\). De tweedegraadsvergelijking \(x^2 + 2x + 5 = 0\) heeft dan wel oplossingen in de complexe getallen: \(-1 + 2i\)  en  \(-1-2i\).
+
+% \begin{remark}
+%     De rekenregel \(\sqrt{\square \square} = \sqrt{\square}\sqrt{\square}\) zorgt meteen voor een tegenstrijdigheid. 
+%     %underbrackets met -1 invoegen 
+%     \begin{center} 
+%         \textbf{We schrijven \(\sqrt{\square}\) enkel voor \( \square \in \R \)}. 
+%     \end{center}
+% \end{remark}
 
 Vandaag worden deze nieuwe 'complexe' getallen gebruikt bij het programmeren van computergames, bij het berekenen van elektronische schakelingen en in de kwantummechanica.
 

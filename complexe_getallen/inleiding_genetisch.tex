@@ -49,11 +49,10 @@ Zonder de breuk \(x = \frac{-4}{3}\) is deze vergelijking niet oplosbaar.
 
 Je merkt al snel dat je nog niet 'genoeg' getallen hebt. 
 De stelling van Pythagoras 
-leert ons dat de schuine zijde van onderstaande driehoek lengte \( \sqrt{2}\) heeft. 
+leert ons dat de schuine zijde van de gegeven driehoek lengte \( \sqrt{2}\) heeft. 
 
 
-\begin{image}[3cm]
-    
+\begin{wrapfigure}{r}{3cm} 
     \begin{tikzpicture}[scale=2]
         % Define the vertices of the triangle
         \coordinate (A) at (0,0);
@@ -68,7 +67,7 @@ leert ons dat de schuine zijde van onderstaande driehoek lengte \( \sqrt{2}\) he
         \node at ($(A)!0.5!(C)$) [left] {$1$};
         
     \end{tikzpicture}
-\end{image}
+\end{wrapfigure}
     
 Met een kort bewijs kan men aantonen dat \(\sqrt{2}\) niet in de verzameling rationale getallen zit, dus dat 
 \[\sqrt{2} = 1.4142135623730950488016887242096980785696718753769480731766797\ldots%379907324784621070388503875343276...
@@ -93,11 +92,10 @@ De reële getallen vormen een rechte waarbij met elk punt met een reëel getal o
     
     Bestaan er volgens jou nog andere soorten getallen? 
 \begin{itemize}
-    \item Bestaan er volgens jou nog andere soorten getallen? 
     \item Zijn er vergelijkingen die je niet kan oplossen met de reële getallen \( \R \) ?
     \item Zou je de reële rechte nog kunnen 'uitbreiden'? 
-    \item Bestaat er volgens jou een 'oneindig' groot getal \( \infty \)? 
-    \item Bestaat het getal \(0.00\dots001 \) ? 
+    % \item Bestaat er volgens jou een 'oneindig' groot getal \( \infty \)? 
+    % \item Bestaat het getal \(0.00\dots001 \) ? 
     
 \end{itemize}
 % \begin{tabular}{@{\qquad}l}
@@ -121,11 +119,63 @@ De reële getallen vormen een rechte waarbij met elk punt met een reëel getal o
     \textbf{b)} 
     Heron van Alexandrië berekende de hoogte van de afgeplatte piramide met volgende afmetingen: b = 28, a = 4 en c = 15. 
     \textbf{Ga Heron van Alexandrië achterna en voer deze berekening uit, valt er je iets op aan het eindresultaat? }
+    
+    \begin{image}[0.8\textwidth]
+        
+        \includegraphics[width = 3cm]{portret_Heron.png}
+        \(\qquad \qquad \qquad\)
+        \begin{tikzpicture}
 
-    \begin{image}[0.4\textwidth]
-        \includegraphics{Heron_pyramide.png}   
+            % Define perspective transformation
+            \tdplotsetmaincoords{70}{120}
+            \begin{scope}[tdplot_main_coords]
+            
+            % Define the bottom base coordinates
+            \coordinate (A) at (-2,-2,0);
+            \coordinate (B) at (2,-2,0);
+            \coordinate (C) at (2,2,0);
+            \coordinate (D) at (-2,2,0);
+            
+            % Define the top base coordinates
+            \coordinate (E) at (-1,-1,3);
+            \coordinate (F) at (1,-1,3);
+            \coordinate (G) at (1,1,3);
+            \coordinate (H) at (-1,1,3);
+            
+            \coordinate (El) at (-1,-1,0);
+            \coordinate (Fl) at (1,-1,0);
+            \coordinate (Gl) at (1,1,0);
+            \coordinate (Hl) at (-1,1,0);
+            
+            % Draw the solid edges
+            \draw[thick, dashed] (A) -- (B);
+            \draw[thick] (B) -- (C);
+            \draw[thick] (C) -- node[below, blue]{\(b\)} (D) ;
+            \draw[thick, dashed] (D) -- (A); % Bottom base
+            
+            
+            \draw[thick] (E) -- (F) -- (G) -- node[above , blue, pos=0.3]{\(a\)} (H) -- cycle; % Top base
+            \draw[dashed, brown, thick] (El) -- (Fl) -- (Gl) -- (Hl) -- cycle; % Top base
+            \draw[thick, dashed] (A) -- (E);
+            \draw[thick] (B) -- (F);
+            \draw[thick] (C) -- (G);
+            \draw[thick] (D) -- node[above right , blue, pos=0.4]{\(c\)} (H);
+            
+            % Draw the correct dashed lines (hidden edges)
+            \draw[dashed, brown, thick] (H) -- node[left, blue, pos=0.5]{\(h\)}  (Hl); % Vertical hidden edge
+            % \draw[dashed, brown, thick] (F) -- (Fl); % Vertical hidden edge
+            
+            \draw[dashed, brown, thick] (D) -- (Hl); % Vertical hidden edge
+            
+            
+            \end{scope}
+        \end{tikzpicture}
+
+        
+        
     \end{image}
-
+    
+    \captionof{figure}{Heron van Alexandrië en zijn afgeplatte piramide.}
 
 \end{exercise}
 
@@ -139,14 +189,20 @@ De reële getallen vormen een rechte waarbij met elk punt met een reëel getal o
 \end{itemize}
 \end{denkvraag*}
 
+
 Heron van Alexandrië schreef als oplossing de positieve wortel \(\sqrt{63}\) in zijn schrift. 
 Waarom hij dat deed is onduidelijk.
 De meest voor de hand liggende verklaring is dat hij deze negatieve wortel niet kon aanvaarden. 
 
-In de 9de eeuw schreef de Indische wiskundige Bhaskar Acharij in een werk over de algebra: 
+% \begin{wrapfigure}{o}{3cm} 
+%     \includegraphics[width=4cm]{Indisch_boek.jpg}
+% \end{wrapfigure}
+
+In de 9de eeuw schreef de Indische wiskundige Mahaviracarya in zijn werk Ganita-Sara-Sangraha over wortels van negatieve getallen hetvolgende\footnote{
+    David Eugene Smith, \textit{The Mathematics of Mahāvīrācārya with English Translations and Notes}, Bulletin of the American Mathematical Society, 1913, volume 19, p312. Eigen vertaling uit het Engels.} 
 
 \begin{quote}
-    'if one asks me what the root is of -9, I say the question is absurd'. 
+    'In de natuur der dingen is een negatieve hoeveelheid geen kwadraat, en het heeft dus geen vierkantswortel'.
 \end{quote}
  
 
@@ -201,32 +257,54 @@ Om deze tegenstrijdige rekenregels te vermijden, voerde Euler een symbool \(i\) 
 Het gebruik van negatieve wortels kan nu altijd vermeden worden: 
 
 \[ \sqrt{-9} = \sqrt{-1 \cdot 9} = \sqrt{-1} \sqrt{9} = 3i  \]
-% TODO de gelijkheid stappen schrijven in het klein? i^2 = -1
 
 
-%Het heeft vele eeuwen geduurd voordat wiskundigen deze nieuwe getallen volledig begrepen hebben. Dus als je het na deze inleiding nog niet helemaal begrijpt is dat volledig normaal \text{;)}.  
+\begin{wrapfigure}{r}{3cm} 
+    \includegraphics[width = 4cm]{portret_Descartes.png}
+    \captionof{figure}{René Descartes}
+\end{wrapfigure}
 
-René Descartes, bekend van het cartesiaans assenstelsel,  is deze getallen tegengekomen bij het oplossen van meetkundige problemen. Hij schreef hierover: 
+René Descartes, bekend van het cartesiaans assenstelsel, is deze getallen tegengekomen bij het oplossen van meetkundige problemen. Hij schreef hierover\footnote{
+    Descartes, René. \textit{La géométrie}. 1637, p47, Eigen vertaling uit het Frans.
+    
+    }: 
+    
+    
+    
+    
+    \begin{quote}
+        '...on ne fçaurait les rendre autres qu’ imaginaires.' 
+    \end{quote}
+    
+    \begin{quote}
+        '...we kunnen ze niet anders dan denkbeeldig maken.'
+    \end{quote}
+    
+    
+    Hierdoor is men deze nieuwe getallen 'imaginaire getallen' gaan noemen. 
+    
+    \newpage
+    
+    Om deze getallen beter te begrijpen zijn wiskundigen ze in een vlak beginnen voorstellen. Op de reële rechte stelt elk punt een reëel getal voor. In het \textbf{complexe vlak} zal elk punt een complex getal voorstellen. 
+    
+    
+    
+    De Ierse wiskundige William Rowan Hamilton schreef hierover in 1837 het volgende\footnote{
+        Hamilton, William Rowan. \textit{Theory of Conjugate Functions or Algebraic
+        Couples: with a Preliminary Essay on Algebra as a Science of Pure
+        Time}, Irish Acad. Trans. \textbf{XVII} (1837), 519–422.}:   
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width = 4cm]{portret_Hamilton.png}
+        \caption{William Rowan Hamilton}
+    \end{figure}
 
-\begin{quote}
-    'on le saurair les rendre autre que imaginaire' 
-\end{quote}
-\begin{quote}
-    'We kunnen ze niet anders dan denkbeeldig noemen'.
-\end{quote}
-%TODO originale bron invoegen
-%TODO nederlandse vertaling invoegen 
-
-Hierdoor is men deze nieuwe getallen 'imaginaire getallen' gaan noemen. Om deze getallen beter te begrijpen zijn wiskundigen ze in een vlak beginnen voorstellen. Op de reële rechte stelt elk punt een reëel getal voor. In het \textbf{complexe vlak} zal elk punt een complex getal voorstellen. 
-
-De Ierse wiskundige William Rowan Hamilton schreef hierover in 1837 het volgende: 
-
-\begin{quote}
-    “...be concisely denoted as follows, \(\sqrt{-1} = (0, 1)\). In the theory of single numbers, the symbol \(\sqrt{-1}\) is absurd, and denotes an impossible extraction, or a merely imaginary number; but in the theory of couples, the same symbol \(\sqrt{-1}\) is significant, and denotes a possible extraction, or a real couple, namely the principal square-root of the couple \((-1,0)\).”
-\end{quote}
-
-%TODO nederlandse vertaling invoegen 
-
+    \begin{quote}
+        “...be concisely denoted as follows, \(\sqrt{-1} = (0, 1)\). In the theory of single numbers, the symbol \(\sqrt{-1}\) is absurd, and denotes an impossible extraction, or a merely imaginary number; but in the theory of couples, the same symbol \(\sqrt{-1}\) is significant, and denotes a possible extraction, or a real couple, namely the principal square-root of the couple \((-1,0)\).”
+    \end{quote}
+    
+    %TODO nederlandse vertaling invoegen 
+    
 
 Uit het citaat blijkt dat in het vlak deze nieuwe getallen veel minder 'denkbeeldig' zijn dan wiskundigen lang gedacht hebben. Het nieuwe symbool \(i\) waarvoor \(i^2 = -1\),  blijkt simpelweg het punt \((0,1)\) te zijn. Omdat deze nieuwe getallen worden samengesteld uit het nieuwe symbool \(i\) en 2 reële getallen, kregen ze ook de naam 'complex'. 
 
