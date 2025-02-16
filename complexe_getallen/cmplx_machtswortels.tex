@@ -1,4 +1,4 @@
-  \documentclass{ximera}
+\documentclass{ximera}
 \input{../preamble}
 \addPrintStyle{..}
 
@@ -7,8 +7,8 @@
     \xmtitle{Wortels van complexe getallen}{}     
     \label{xim:complexe_machtswortels}
 
-    \providecommand{\fm}{\phantom{-}}
-    \renewcommand{\fm}{\phantom{-}}
+    % phantom sign ...
+    \providecommand{\sg}{\phantom{+}}
 
     Het begrip $n$-de machtswortel van de reële getallen kan op het eerste zicht ook eenvoudig worden gebruikt bij complexe getallen. 
     Er treden echter enkele nieuwe fenomenen op.
@@ -26,7 +26,7 @@
 
     \begin{example} Welke van volgende uitspraken zijn waar?
         \begin{question} 
-            \choiceTrue  $\fm3$ is een derdermachtswortel van $27$
+            \choiceTrue  $\sg3$ is een derdermachtswortel van $27$
             \begin{feedback} want $3^3 = 27$\end{feedback}
         \end{question}
         \begin{question} 
@@ -55,9 +55,9 @@
             \item Bij de reële getallen was er een belangrijk onderscheid tussen $n$ even en $n$ oneven omdat negatieve getallen geen even machtswortels hebben, en positieve getallen twee even machtswortels hebben:
             \begin{center}
             \begin{tabular}{lll}
-                $x^2 =\fm4$ & heeft twee reële oplossingen:     & $x=2$ \text{ en } $x=-2$ \\
+                $x^2 =\sg4$ & heeft twee reële oplossingen:     & $x=2$ \text{ en } $x=-2$ \\
                 $x^2 =  -4$ & heeft geen reële oplossingen:     & $x^2 \neq -4, \forall x \in \R $\\
-                $x^3 =\fm8$ & heeft een unieke reële oplossing: & $x=2$ \\
+                $x^3 =\sg8$ & heeft een unieke reële oplossing: & $x=2$ \\
                 $x^3 =  -8$ & heeft een unieke reële oplossing: & $x=-2$ \\
             \end{tabular}
             \end{center}
