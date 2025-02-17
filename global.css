@@ -999,6 +999,12 @@ img.brandlogo {
     max-width: 20vw;
 }
 
+
+.title-xourse, .title-activity {
+    text-transform: uppercase;
+    font-family: "Times New Roman", Times, serif;
+}
+
 .main-inhoud .activity-title {
 	background-color: #526a80;
 }
