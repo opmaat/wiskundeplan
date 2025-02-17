@@ -485,7 +485,7 @@ div.quickquestion {
 }
 
 div.quickquestion:before {
-	content: 'QuickQuestion';
+	content: 'Vlugge Vraag';
 	font-weight: bold;	
 	top: -12px;
 	position: absolute;
