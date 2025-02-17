@@ -10,13 +10,15 @@
     %OPLOSSING MEERKEUZE 
     
     \begin{exercise} Is de gegeven uitdrukking te beschouwen als een product of als een som?
+        \newcommand{\choicesom}{{\wordChoice{\choice[correct]{som}\choice{product}}}}
+        \newcommand{\choiceprod}{{\wordChoice{\choice{som}\choice[correct]{product}}}}
         \begin{xmmulticols}
             
-            \begin{question}  \( a \cdot b \cdot c + 1    =\answer[onlineshowanswerbutton]{} \) \end{question}
-            \begin{question}  \( (x + y)^2                =\answer[onlineshowanswerbutton]{} \) \end{question}
-            \begin{question}  \( a \cdot (4b + c)         =\answer[onlineshowanswerbutton]{} \) \end{question}
-            \begin{question}  \( x \cdot y + x \cdot z    =\answer[onlineshowanswerbutton]{} \) \end{question}
-            \begin{question}  \( a \cdot b \cdot (c + 1)  =\answer[onlineshowanswerbutton]{} \) \end{question}
+            \begin{question}  \( a \cdot b \cdot c + 1   \) is een \choicesom \end{question}
+            \begin{question}  \( (x + y)^2               \) is een \choiceprod \end{question}
+            \begin{question}  \( a \cdot (4b + c)        \) is een \choiceprod \end{question}
+            \begin{question}  \( x \cdot y + x \cdot z   \) is een \choicesom \end{question}
+            \begin{question}  \( a \cdot b \cdot (c + 1) \) is een \choiceprod \end{question}
             
         \end{xmmulticols}    
     \end{exercise}
@@ -28,15 +30,20 @@
 
 
 \begin{exercise} Onderzoek telkens of je van links naarechts ontbindt, uitwerkt, of geen van beide.
+    \newcommand{\choiceuit}{{\wordChoice{\choice[correct]{uitwerken}\choice{ontbinden}\choice{geen van beide}}}}
+    \newcommand{\choiceont}{{\wordChoice{\choice{uitwerken}\choice[correct]{ontbinden}\choice{geen van beide}}}}
+    \newcommand{\choiceand}{{\wordChoice{\choice{uitwerken}\choice{ontbinden}\choice[correct]{geen van beide}}}}
+
+
     \begin{xmmulticols}
 
-    \begin{question} \((3a+b)^2 = 9a^2 + 6ab + b^2     =\answer[onlineshowanswerbutton]{} \) \end{question}
-    \begin{question} \(4(x^2 - y^2) = 4x^2 - 4y^2      =\answer[onlineshowanswerbutton]{} \) \end{question}
-    \begin{question} \(4(x^2 - y^2) = 4(x - y)(x + y)  =\answer[onlineshowanswerbutton]{} \) \end{question}
-    \begin{question} \(3x^3 - 3x + 1 = 3x(x^2 - 1) + 1 =\answer[onlineshowanswerbutton]{} \) \end{question}
-    \begin{question} \(= 3x(x - 1)(x + 1) + 1          =\answer[onlineshowanswerbutton]{} \) \end{question}
-    \begin{question} \(27a^3 - 27a^2 b + 9ab^2 - b^3   =\answer[onlineshowanswerbutton]{} \) \end{question}
-    \begin{question} \(= (3a - b)^3                    =\answer[onlineshowanswerbutton]{} \) \end{question}
+    \begin{question} \((3a+b)^2 = 9a^2 + 6ab + b^2     \) \choiceuit \end{question}
+    \begin{question} \(4(x^2 - y^2) = 4x^2 - 4y^2      \) \choiceuit \end{question}
+    \begin{question} \(4(x^2 - y^2) = 4(x - y)(x + y)  \) \choiceont \end{question}
+    \begin{question} \(3x^3 - 3x + 1 = 3x(x^2 - 1) + 1 \) \choiceuit \end{question}
+    \begin{question} \(= 3x(x - 1)(x + 1) + 1          \) \choiceuit \end{question}
+    \begin{question} \(27a^3 - 27a^2 b + 9ab^2 - b^3   \) \choiceuit \end{question}
+    \begin{question} \(= (3a - b)^3                    \) \choiceuit \end{question}
 
     \end{xmmulticols}    
 \end{exercise}
