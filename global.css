@@ -1012,10 +1012,10 @@ blockquote {
     padding-block: 0.5em;
 }
 
-.wrap-fig-r {
+.wrapfig-r {
     float: right;
 }
 
-.wrap-fig-l {
+.wrapfig-l {
     float: left;
 }
