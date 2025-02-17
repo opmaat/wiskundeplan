@@ -1003,8 +1003,19 @@ img.brandlogo {
 }
 
 blockquote {
-	margin: 0 0 1rem;
 	background-color: lightgray;
-	padding: 2em;
-	margin-inline: 5em;
+    width: fit-content;
+    max-width: min(50em, 80%);
+    margin: auto;
+    text-align: center;
+    padding-inline: 2em;
+    padding-block: 0.5em;
+}
+
+.wrap-fig-r {
+    float: right;
+}
+
+.wrap-fig-l {
+    float: left;
 }
