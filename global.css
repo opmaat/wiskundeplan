@@ -968,13 +968,18 @@ span.xmqa1 {
 
 
 .main-inhoud .toc-search {
-    background-color: white;
+    background-color: #526a80;
 }
 
 .toc-search .btn {
     background: transparent;
     color: #526a80;
     padding: 0px 5px;
+}
+
+.toc-search .btn {
+    /* background: transparent; */
+    color: white;
 }
 
 .toc .part {
@@ -996,7 +1001,14 @@ img.brandlogo {
 
 .main-inhoud .activity-title {
 	background-color: #526a80;
-  }
+}
+
+
+.main-inhoud .activity-title .title {
+    background-color: #383f47;
+
+}
+
 
 .main-inhoud .activity {
 	 overflow-y: hidden; 
