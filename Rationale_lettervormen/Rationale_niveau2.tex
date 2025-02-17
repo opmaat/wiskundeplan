@@ -1,0 +1,212 @@
+\documentclass{ximera}
+\input{../preamble}
+\addPrintStyle{..}
+\begin{document}
+	\author{Wim Obbels}
+	\xmtitle{De norm van een complex getal}{}
+	\label{xim:complexe_getallen_norm}
+
+
+
+
+
+
+
+\begin{exercise} Vereenvoudig indien mogelijk. 
+    \begin{xmmulticols}
+
+    \begin{question} \( \frac{(b - a)^3}                  {a^2 - b^2                 } =\answer[onlineshowanswerbutton]{\frac{-(a - b)^2}   {a + b}           } \) \end{question}
+    \begin{question} \( \frac{x^2 + 1}                    {x^4 + 2x^2 + 1            } =\answer[onlineshowanswerbutton]{\frac{1}            {x^2 + 1}         } \) \end{question}
+    \begin{question} \( \frac{4x^2 - 12xy + 9y^2}         {4x^2 - 9y^2               } =\answer[onlineshowanswerbutton]{\frac{2x - 3y}      {2x + 3y}         } \) \end{question}
+    \begin{question} \( \frac{(2x - y)^2 - (x + 3y)^2}    {(3x - y)^2 - (2x + 3y)^2  } =\answer[onlineshowanswerbutton]{\frac{3x + 2y}      {5x + 2y}         } \) \end{question}
+    \begin{question} \( \frac{a^2 b + ac - ab^2 c - bc^2} {a^2 c - ab - abc^2 + b^2 c} =\answer[onlineshowanswerbutton]{\frac{ab + c}       {ac - b}          } \) \end{question}
+    \begin{question} \( \frac{x^3 - 8}                    {2x^3 + 2x^2 - 8x - 8      } =\answer[onlineshowanswerbutton]{\frac{x^2 + 2x + 4} {2(x + 2)(x + 1)} } \) \end{question}
+    \begin{question} \( \frac{(x - 3)(x - 2) - 2}         {x - 1                     } =\answer[onlineshowanswerbutton]{x - 4                                 } \) \end{question}
+    \begin{question} \( \frac{(x - 2)(x + 5) + (x + 1)}   {x - 2                     } =\answer[onlineshowanswerbutton]{\frac{x^2 + 4x - 9} {x - 2}           } \) \end{question}
+    \begin{question} \( \frac{2a(a + 2) - (a^2 - a - 6)}  {(a + 2)^3                 } =\answer[onlineshowanswerbutton]{\frac{a + 3}        {(a + 2)^2}       } \) \end{question}
+    \begin{question} \( \frac{x^3 + 3x^2 + 3x + 1}        {-2x^3 - 8x^2 - 10x - 4    } =\answer[onlineshowanswerbutton]{\frac{-(x + 1)}     {2(x + 2)}        } \) \end{question}
+
+
+    \end{xmmulticols}    
+\end{exercise}
+
+
+
+
+
+
+
+
+\begin{exercise} Vereenvoudig indien mogelijk. Zonder eerst in teller en noemer de gemeenschappelijke factoren af. 
+    \begin{xmmulticols}
+    \begin{question} \( \frac{3x^4 - 3x^2}                  {x^4 + x^2                               } =\answer[onlineshowanswerbutton]{\frac{3(x^2 - 1)}{x^2 + 1} } \) \end{question}
+    \begin{question} \( \frac{a^2 - ab}                     {b^2 - ab                                } =\answer[onlineshowanswerbutton]{-\frac{a}{b}               } \) \end{question}
+    \begin{question} \( \frac{a^2 - a^6}                    {-a^7 + a^5                              } =\answer[onlineshowanswerbutton]{\frac{a^2 + 1}{a^3}        } \) \end{question}
+    \begin{question} \( \frac{2(x - 2) + (x - 2)x^2}        {x - 2                                   } =\answer[onlineshowanswerbutton]{x^2 + 2                    } \) \end{question}
+    \begin{question} \( \frac{(4a - 1)b + (1 - 4a)c}        {b - c                                   } =\answer[onlineshowanswerbutton]{4a - 1                     } \) \end{question}
+    \begin{question} \( \frac{x^3 + 6x^2 + 9x}              {x^3 - 9x                                } =\answer[onlineshowanswerbutton]{\frac{x + 3}{x - 3}        } \) \end{question}
+    \begin{question} \( \frac{2x - 1 + (2x - 1)^2}          {(2x - 1)^3                              } =\answer[onlineshowanswerbutton]{\frac{2x}{(2x - 1)^2}      } \) \end{question}
+    \begin{question} \( -\frac{                             (x - 1)^3 - 3(x + 1)(1 - x)^2}{(x - 1)^6 } =\answer[onlineshowanswerbutton]{\frac{2(x + 2)}{(x - 1)^4} } \) \end{question}
+    \begin{question} \( \frac{2a(a^2 + 3) - a^2 \cdot 2a}   {a(a^2 + 3)^2                            } =\answer[onlineshowanswerbutton]{\frac{6}{(a^2 + 3)^2}      } \) \end{question}
+    \begin{question} \( \frac{ax + bx + ay + by + az + bz}  {a + b                                   } =\answer[onlineshowanswerbutton]{x + y + z                  } \) \end{question}
+
+    \end{xmmulticols}    
+\end{exercise}
+
+
+
+\begin{exercise} Bereken en vereenvoudig indien mogelijk. 
+    \begin{xmmulticols}
+    
+    \begin{question} \( \frac{3}      {x + 1}  + \frac{2x + 1}  {x - 2}    =\answer[onlineshowanswerbutton]{\frac{2x^2 + 6x - 5}{(x - 2)(x + 1)} } \) \end{question}
+    \begin{question} \( \frac{2x + 3} {2x - 3} + \frac{7}       {x}        =\answer[onlineshowanswerbutton]{\frac{17a + 3}{3(a + 2)}             } \) \end{question}
+    \begin{question} \( \frac{4a + 1} {a + 2}  + \frac{5a}      {3(a + 2)} =\answer[onlineshowanswerbutton]{\frac{2x^2 + 17x - 21}{x(2x - 3)}    } \) \end{question}
+    \begin{question} \( \frac{4x + 1} {2x - 3} + \frac{2x + 4}  {3 - 2x}   =\answer[onlineshowanswerbutton]{1                                    } \) \end{question}
+    \begin{question} \( 1                      - \frac{x - 2}   {3x + 7}   =\answer[onlineshowanswerbutton]{\frac{2x + 9}{3x + 7}                } \) \end{question}
+    \begin{question} \( \frac{a}      {5}      - \frac{a + 2}   {3a}       =\answer[onlineshowanswerbutton]{\frac{3a^2 - 5a - 10}{15a}           } \) \end{question}
+    \begin{question} \( \frac{2x - 1} {x - 5}  + \frac{x + 5}   {2x + 1}   =\answer[onlineshowanswerbutton]{\frac{5x^2 - 26}{(x - 5)(2x + 1)}    } \) \end{question}
+    \begin{question} \( \frac{x - 4}  {x - 1}  - \frac{x - 1}   {x - 4}    =\answer[onlineshowanswerbutton]{\frac{-3(2x - 5)}{(x - 4)(x - 1)}    } \) \end{question}
+    \begin{question} \( \frac{x}      {x - 4}  + \frac{x - 8}   {x - 4}    =\answer[onlineshowanswerbutton]{2                                    } \) \end{question}
+    \begin{question} \( \frac{a}      {a - 2}  + \frac{2a - 1}  {2 - a}    =\answer[onlineshowanswerbutton]{\frac{-(a - 1)}{a - 2}               } \) \end{question}
+
+
+    \end{xmmulticols}    
+\end{exercise}
+
+
+\begin{exercise} Bereken en vereenvoudig indien mogelijk. 
+    \begin{xmmulticols}
+    \begin{question} \( \frac{2a^2}   {(a - 1)(a + 1)}  - \frac{a^2 + 1} {a^2 - 1}                                          =\answer[onlineshowanswerbutton]{1                                              } \) \end{question}
+    \begin{question} \( \frac{1}      {(a - b)^2}       + \frac{1}       {(b - a)^2}                                        =\answer[onlineshowanswerbutton]{\frac{2}{(a - b)^2}                            } \) \end{question}
+    \begin{question} \( \frac{1}      {x - 1}           + \frac{x + 1}   {(x - 1)(x - 3)}                                   =\answer[onlineshowanswerbutton]{\frac{2}{x - 3}                                } \) \end{question}
+    \begin{question} \( \frac{8}      {(2 + x)(x - 2)}  + \frac{2}       {2 - x}                                            =\answer[onlineshowanswerbutton]{\frac{-2}{x + 2}                               } \) \end{question}
+    \begin{question} \( \frac{1}      {x + 1}           + \frac{1}       {x - 1}               + \frac{2}{(1 - x)(1 + x)}   =\answer[onlineshowanswerbutton]{\frac{2}{x + 1}                                } \) \end{question}
+    \begin{question} \( \frac{4}      {2 + x}           - \frac{8}       {4 - x^2}             + \frac{2}{x - 2}            =\answer[onlineshowanswerbutton]{\frac{2(3x + 2)}{(x - 2)(x + 2)}               } \) \end{question}
+    \begin{question} \( \frac{x - 1}  {2x - 1}          + \frac{2}       {x - 1}               - \frac{x}{1 - 2x}           =\answer[onlineshowanswerbutton]{\frac{x + 1}{x - 1}                            } \) \end{question}
+    \begin{question} \( \frac{5x - 9} {(x + 2)(x - 3)}  + \frac{x - 3}   {(x + 1)(x + 2)}                                   =\answer[onlineshowanswerbutton]{\frac{2x(3x - 5)}{(x + 1)(x + 2)(x - 3)}       } \) \end{question}
+    \begin{question} \( \frac{x - 3}  {(x - 1)(x - 2)}  - \frac{x - 1}   {(x - 2)(x - 3)}                                   =\answer[onlineshowanswerbutton]{\frac{-4}{(x - 3)(x - 1)}                      } \) \end{question}
+    \begin{question} \( \frac{2x - 3} {(2x - 1)(x - 1)} + \frac{x + 3}   {(2x - 1)(2x + 3)}                                 =\answer[onlineshowanswerbutton]{\frac{5x^2 + 2x - 12}{(x - 1)(2x - 1)(2x + 3)} } \) \end{question}
+    \end{xmmulticols}    
+\end{exercise}
+
+
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+\begin{exercise} Bereken en vereenvoudig indien mogelijk. 
+    \begin{xmmulticols}
+        
+    \begin{question} \( \frac{x + 6}     {x^2 - 16}                 - \frac{x + 1}        {x^2 - 4x                         } =\answer[onlineshowanswerbutton]{\frac{1}{x(x + 4)}                            } \) \end{question}
+    \begin{question} \( \frac{x + 1}     {x - 1}                    + \frac{x - 1}        {x + 1} - \frac{4}{x^2 - 1        } =\answer[onlineshowanswerbutton]{2                                             } \) \end{question}
+    \begin{question} \( \frac{4x}        {x^2 - 4}                  + \frac{2}            {x^2 - 5x + 6                     } =\answer[onlineshowanswerbutton]{\frac{2(2x - 1)}{(x - 3)(x + 2)}              } \) \end{question}
+    \begin{question} \( \frac{3}         {x^3 - 1}                  - \frac{2}            {x^2 - 1                          } =\answer[onlineshowanswerbutton]{\frac{-(2x + 1)}{(x + 1)(x^2 + x + 1)}        } \) \end{question}
+    \begin{question} \( \frac{1}         {x^2 - x - 2}              - \frac{1}            {x^3 - 4x^2 + 5x - 2              } =\answer[onlineshowanswerbutton]{\frac{x(x - 3)}{(x - 2)(x + 1)(x^2 - 2x + 1)} } \) \end{question}
+    \begin{question} \( \frac{a^3 - b^3} {a^2 - b^2}                - \frac{a^2 b + ab^2} {a^2 + ab                         } =\answer[onlineshowanswerbutton]{\frac{a^2}{a + b}                             } \) \end{question}
+    \begin{question} \( \frac{a^4}       {a^4- b^4}                 + \frac{1}            {a^2 - b^2  -1                    } =\answer[onlineshowanswerbutton]{\frac{a^2 + b^2 + b^4}{a^4 - b^4}             } \) \end{question}
+    \begin{question} \( \frac{1}         {x - y}                    - \frac{3xy}          {x^3 - y^3                        } =\answer[onlineshowanswerbutton]{\frac{x - y}{x^2 + xy + y^2}                  } \) \end{question}
+    \begin{question} \( \frac{2a}        {a^3 + a^2 b - ab^2 - b^3} - \frac{1}            {a^2 - b^2                        } =\answer[onlineshowanswerbutton]{\frac{1}{(a + b)^2}                           } \) \end{question}
+    \begin{question} \( \frac{1}         {a^2 - a}                  - \frac{1}            {a^2 + a} + \frac{2a^5}{a^2 - a^4 } =\answer[onlineshowanswerbutton]{\frac{-2(a^2 + 1)}{a}                         } \) \end{question}
+
+
+    \end{xmmulticols}    
+\end{exercise}
+
+
+
+
+
+\begin{exercise} Bereken en vereenvoudig indien mogelijk. 
+    \begin{xmmulticols}
+    \begin{question} \( \frac{x^2 - x}       {x - 1}     \cdot \frac{5x - 5}       {1 - x           } =\answer[onlineshowanswerbutton]{-5x                               } \) \end{question}
+    \begin{question} \( \frac{x^3 - 8}       {x^3 + 8}   \cdot \frac{x^2 + 4x + 4} {x^2 - 4         } =\answer[onlineshowanswerbutton]{\frac{x^2 + 2x + 4}{x^2 - 2x + 4} } \) \end{question}
+    \begin{question} \( \frac{xy + y^2}      {(x - y)^2} \cdot \frac{x^2 - xy}     {(x + y)^2       } =\answer[onlineshowanswerbutton]{\frac{xy}{x^2 - y^2}              } \) \end{question}
+    \begin{question} \( \frac{2a^2 + 2ab}    {ab - b^2}  \cdot \frac{a^2 - b^2}    {a^2 + 2ab + b^2 } =\answer[onlineshowanswerbutton]{\frac{2a}{b}                      } \) \end{question}
+    \begin{question} \( \frac{x^2 + 3x - 10} {2x}        \cdot \frac{x^2 - 3x}     {x^2 - 5x + 6    } =\answer[onlineshowanswerbutton]{\frac{1}{2}(x + 5)                } \) \end{question}
+
+    \end{xmmulticols}    
+\end{exercise}
+
+
+
+
+ 
+ 
+
+\begin{exercise} Bereken en vereenvoudig indien mogelijk. 
+    \begin{xmmulticols}
+    \begin{question} \( \left( 1 - \frac{1}{x - 2}                          \right) \left( x - 3 + \frac{1}{x - 3}       \right)  =\answer[onlineshowanswerbutton]{\frac{x^2 - 6x + 10}{x - 2}                    } \) \end{question}
+    \begin{question} \( \left( x - \frac{x + 2}{x}                          \right) \left( 5 - \frac{1}{x + 1}           \right)  =\answer[onlineshowanswerbutton]{\frac{(x - 2)(5x + 4)}{x}                      } \) \end{question}
+    \begin{question} \( \left( x - \frac{x - y}{1 + xy}                     \right) \left( x - \frac{2}{x + 1}           \right)  =\answer[onlineshowanswerbutton]{\frac{(x^2 + 1)(x^2 + x - 2)y}{(x + 1)(xy + 1)}} \) \end{question}
+    \begin{question} \( \left( 3 - \frac{1}{a + 2}                          \right) \left( a + 1 + \frac{2a + 1}{a - 1}  \right)  =\answer[onlineshowanswerbutton]{\frac{a(3a + 5)}{a - 1}                        } \) \end{question}
+    \begin{question} \( \left( \frac{b + a}{b + 2a} - \frac{b - a}{b - 2a}  \right) \left( \frac{b^2}{a^2} - 4           \right)  =\answer[onlineshowanswerbutton]{\frac{-2b}{a}                                  } \) \end{question}
+
+
+    \end{xmmulticols}    
+\end{exercise}
+
+ 
+
+
+\begin{exercise} Bereken en vereenvoudig indien mogelijk. 
+    \begin{xmmulticols}
+    \begin{question} \( \frac  {\frac{5x^2 - 5}{x^2}}              {\frac{6x + 6}{x^3}}                                                                    =\answer[onlineshowanswerbutton]{\frac{5x(x - 1)}{6}                     } \) \end{question}
+    \begin{question} \( \frac  {\frac{x^2 + 5x + 6}{x^2 + 6x + 5}} {\frac{x^2 + 4x + 4}{x^2 + 7x + 10}}                                                    =\answer[onlineshowanswerbutton]{\frac{x + 3}{x + 1}                     } \) \end{question}
+    \begin{question} \( \frac  {3 + \frac{1}{x - 2}}               {3 - \frac{1}{x - 5}}                                                                   =\answer[onlineshowanswerbutton]{\frac{(x - 5)(3x - 5)}{(x - 2)(3x - 16)}} \) \end{question}
+    \begin{question} \( \frac  {x - \frac{1}{x}}                   {x + \frac{1}{x}}                                                                       =\answer[onlineshowanswerbutton]{\frac{x^2 - 1}{x^2 + 1}                 } \) \end{question}
+    \begin{question} \( \frac  {\frac{1}{a - b} + 1}               {\frac{1}{a - b} - 1}                                                                   =\answer[onlineshowanswerbutton]{\frac{-(a - b + 1)}{a - b - 1}          } \) \end{question}
+    \begin{question} \( \frac  {(x - 3)^2}                         {x} \div (x^2 - 9)                                                                      =\answer[onlineshowanswerbutton]{\frac{x - 3}{x(x + 3)}                  } \) \end{question}
+    \begin{question} \( \frac  {5 + \frac{3}{x + 1}}               {5}                                                                                     =\answer[onlineshowanswerbutton]{\frac{5x + 8}{5(x + 1)}                 } \) \end{question}
+    \begin{question} \( \frac  {x + 2}                             {\frac{3}{x + 4} - 2}                                                                   =\answer[onlineshowanswerbutton]{\frac{-(x + 2)(x + 4)}{2x + 5}          } \) \end{question}
+    \begin{question} \( \frac  {1}                                 {\frac{1}{a} - \frac{1}{b}}              \cdot \left( \frac{b}{a} - \frac{a}{b} \right) =\answer[onlineshowanswerbutton]{a + b                                   } \) \end{question}
+    \begin{question} \( \frac  {1}                                 {1 + \frac{4x^2}{(x^2 - 1)^2}}           \cdot \frac{(x^2 + 1)^2}{(x - 1)^2}            =\answer[onlineshowanswerbutton]{(x + 1)^2                               } \) \end{question}
+
+
+    \end{xmmulticols}    
+\end{exercise}
+
+
+\begin{exercise} Bereken en vereenvoudig indien mogelijk. 
+    \begin{xmmulticols}
+    \begin{question} \( \left( \frac{1}{a} + \frac{1}{b}         \right)^{-1                                        }=\answer[onlineshowanswerbutton]{\frac{ab}{a + b}    } \) \end{question}
+    \begin{question} \( \left( \frac{a}{a - b} - \frac{b}{b - a} \right)^{-1                                        }=\answer[onlineshowanswerbutton]{\frac{a - b}{a + b} } \) \end{question}
+    \begin{question} \( \left( y^{-2} - x^{-2}                   \right)\left( \frac{1}{y} - \frac{1}{x} \right)^{-1}=\answer[onlineshowanswerbutton]{\frac{x + y}{xy}    } \) \end{question}
+    \end{xmmulticols}    
+\end{exercise}
+
+
+
+\begin{exercise} Bereken en vereenvoudig indien mogelijk. 
+    \begin{xmmulticols}
+    \begin{question} \( \frac{(a - 1)^3 - (a + 1)(a - 1)^2}{(a - 1)^6}                                                                                                  =\answer[onlineshowanswerbutton]{\frac{-2}{(a-1)^4}              } \) \end{question}
+    \begin{question} \( \frac{3x + 3}{x^2 - 2x}                                                   - \frac{2x + 2}{x^2 - 4}                                              =\answer[onlineshowanswerbutton]{\frac{(x+1)(x+6)}{x(x^2-4)}     } \) \end{question}
+    \begin{question} \( \left( \frac{1}{y^2} - \frac{1}{x^2} \right)                              \cdot \frac{y}{1 - \frac{y}{x}}                                       =\answer[onlineshowanswerbutton]{\frac{x + y}{xy}                } \) \end{question}
+    \begin{question} \( \frac{1 + t}{1 - t^2}                                                     + \frac{1 + t}{(1 - t)^2}                                             =\answer[onlineshowanswerbutton]{\frac{2}{(1 - t)^2}             } \) \end{question}
+    \begin{question} \( \frac{x^2 - y^2 + x + y}{x + y}                                                                                                                 =\answer[onlineshowanswerbutton]{x - y + 1                       } \) \end{question}
+    \begin{question} \( \frac{1}{y} - y \) / \( 1 - \frac{1}{y}                                                                                                         =\answer[onlineshowanswerbutton]{-(y + 1)                        } \) \end{question}
+    \begin{question} \( \frac{1 + x}{1 + 2x + x^2}                                                - \frac{1 + x}{1 + x^3}                                               =\answer[onlineshowanswerbutton]{\frac{x(x - 2)}{x^3 + 1}        } \) \end{question}
+    \begin{question} \( \frac{\frac{x^2 - 4}{(x - 2)^2}}{x + 2}                                                                                                         =\answer[onlineshowanswerbutton]{\frac{1}{x - 2}                 } \) \end{question}
+    \begin{question} \( \frac{x^2 - 4}{\frac{(x - 2)^2}{x + 2}}                                                                                                         =\answer[onlineshowanswerbutton]{\frac{(x + 2)^2}{x - 2}         } \) \end{question}
+    \begin{question} \( \frac{1}{\frac{a - b}{ab}}                                                \cdot \left( \frac{b}{a} - \frac{a}{b} \right)                        =\answer[onlineshowanswerbutton]{-(a + b)                        } \) \end{question}
+    \begin{question} \( \frac{1}{a^2 - 2a} + 5                                                    + \frac{6}{2 - a}                                                     =\answer[onlineshowanswerbutton]{\frac{5a^2 - 16a + 1}{a^2 - 2a} } \) \end{question}
+    \begin{question} \( \frac{1}{\frac{1}{x} + \frac{1}{y}}                                                                                                             =\answer[onlineshowanswerbutton]{\frac{xy}{x + y}                } \) \end{question}
+    \begin{question} \( \frac{x + 2y}{\frac{1}{x} - \frac{2}{y}}                                                                                                        =\answer[onlineshowanswerbutton]{\frac{xy(x + 2y)}{y - 2x}       } \) \end{question}
+    \begin{question} \( \frac{(x - a)(x^2 + 2ax + a^2)}{x^3 + a^3}                                \cdot \frac{x^2 - ax + a^2}{x^3 - a^3}                                =\answer[onlineshowanswerbutton]{\frac{x + a}{x^2 + ax + a^2}    } \) \end{question}
+    \begin{question} \( \frac{x^3 - y^3}{x^4 - y^4}                                               \cdot \frac{x^2 + y^2}{x^2 + xy + y^2} \cdot \frac{x - y}{(x + y)^2}  =\answer[onlineshowanswerbutton]{\frac{x - y}{(x + y)^3}         } \) \end{question}
+    \begin{question} \( \left( y^{-2} - x^{-2} \right)                                            \cdot \frac{y}{1 - yx^{-1}}                                           =\answer[onlineshowanswerbutton]{\frac{x + y}{xy}                } \) \end{question}
+    \begin{question} \( \left( 1 - \frac{1}{x} \right) \left( 2 - \frac{1}{x} \right)             \cdot \frac{1}{x^2 - 3x + 2}                                          =\answer[onlineshowanswerbutton]{\frac{2x - 1}{x^2(x - 2)}       } \) \end{question}
+    \begin{question} \( \frac{2x + 3}{x^2 - 7x + 12}                                              - \frac{2}{x - 3}                                                     =\answer[onlineshowanswerbutton]{\frac{11}{(x - 4)(x - 3)}       } \) \end{question}
+    \begin{question} \( \frac{2x^2 - x - 6}{\frac{4}{x^2} - 1}                                                                                                          =\answer[onlineshowanswerbutton]{\frac{-x^2(2x + 3)}{x + 2}      } \) \end{question}
+    \begin{question} \( \frac{\frac{1}{x^2} - 1}{\frac{1}{x} - \frac{2}{x^2} - \frac{3}{x^3}}                                                                           =\answer[onlineshowanswerbutton]{\frac{-x(x - 1)}{x - 3}         } \) \end{question}
+    
+    \end{xmmulticols}    
+\end{exercise}
+
+\end{document}
