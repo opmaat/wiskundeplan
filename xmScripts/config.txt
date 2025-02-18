@@ -46,6 +46,7 @@ YOUR_EMAIL=""
 # export DOCKER_REPO=" "
 # export XM_PUSH_FORCE=1
 # export XM_FROST_WITH_UNCOMMITTED_CHANGES=1
+export XM_COMPILE_SEQUENCE="pdf,handout.pdf,html"
 
 #
 # For use in Actions, and perhaps to adapt the functionality of the PDF/HTML/SERVE buttons
