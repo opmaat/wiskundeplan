@@ -1,0 +1,140 @@
+\documentclass{ximera}
+\input{../../preamble}
+\addPrintStyle{..}
+\begin{document}
+	\author{Wiskundeplan}
+	\xmtitle{Rekenen met breuken}{}
+
+Deze pagina geeft een overzicht van de rekenregels voor breuken. 
+De focus ligt op rekenvaardigheid, voor een theoretisch meer nauwkeurige bespreken verwijzen we door naar een handboek. 
+
+
+\begin{definition}\label{def:breuken}\nl
+ 
+%Zij $a,b,c,d\in \R$.
+Een \textbf{breuk} is een uitdrukking van de vorm $\frac ab$,  met $a,b\in\R$  en $b\neq0$.
+\\[2mm]
+We noemen $a$ de \textbf{teller} en $b$ de \textbf{noemer}.
+Zodra de noemers verschillend zijn van $0$, geldt:
+\begin{align*}
+        \important{\frac{a}{b} = \frac{c}{d}}  &\iff \important{ad = bc}
+             &\text{(gelijkheid van (getalwaarde van) breuken (kruisproduct))}
+             %\label{def: gelijkwaardigheid breuken}
+             \\[2mm]
+        \frac{a}{b}+\frac{c}{d} \quad&\perdef\quad \frac{ad+cb}{bd}
+             &\text{ (optelling (op gelijke noemer brengen))}
+             %\label{def:optelling breuken}
+             \\[2mm]
+        \frac{a}{b} \cdot \frac{c}{d} \quad&\perdef\quad \frac{a\cdot c}{b\cdot d}
+             &\text{(vermenigvuldiging (teller $\times$ teller, noemer $\times$ noemer)) }
+             %\label{def: vermenigvuldiging breuken}
+             \\[2mm]
+        \frac{a}{b} : \frac{c}{d} \quad&\perdef\quad \frac ab \cdot \frac dc = \frac{a\cdot d}{b\cdot c}
+             &\text{(deling (maal omgekeerde))}
+             %\label {def: deling breuken}
+\end{align*}
+
+\end{definition}
+
+
+
+Deze definities geven aanleiding tot een hele reeks rekenregels: 
+
+\begin{proposition}\label{eig:rekenregels_breuken}\nl
+ 
+{
+\allowdisplaybreaks
+\addtolength{\jot}{-2mm}  % hack: double // for html (??), but -2mm for pdf :( )
+%\savebox\strutbox{$\vphantom{\dfrac{1^2}{1^2}^n}$}   % hack!
+\begin{align*}
+        \frac{a\cdot c}{a\cdot d} &=    \frac{\cancel{a}\cdot c}{\cancel{a}\cdot d} = \frac{c}{d}
+            & \text{(gemeenschappelijke factor $a$ wegdelen)} \\
+            \\
+         \frac{c}{d}    &= \frac{a\cdot c}{a\cdot d}
+            & \text{(met factor $a$ vermenigvuldigen)} \\
+            \\
+        a\cdot \frac{c}{d}   &= \frac{a\cdot c}{d}
+            & \text{(getal maal breuk)}  \\
+            \\
+        \frac{a\cdot c}{d}   &= a\cdot \frac{c}{d}
+            & \text{(factor uit teller halen)} \\
+            \\
+        \frac{a}{b}+\frac{c}{b}  &= \frac{a+c}{b}
+            & \text{(breuken optellen, gelijke noemers)} \\
+            \\
+        \frac{a+c}{b} &= \frac{a}{b}+\frac{c}{b}
+            & \text{(som in teller splitsen)}\\ % \hfill\text{(zelfde formule als vorige!)}\\
+            \\
+        \frac{\frac{a}{b}}{\ \frac{c}{d}\ } &= \frac ab \cdot \frac dc =  \frac{a\cdot d}{b\cdot c}
+            & \text{(breuk gedeeld door breuk is maal omgekeerde)}\\
+            \\
+        \frac{\frac{a}{b}}{\ \frac{c}{b}\ } &= \frac ab \cdot \frac bc =  \frac{a}{c}
+            & \text{(gelijke noemer $\frac 1b$  wegdelen)}\\
+            \\
+        \frac{\frac{a}{b}}{\ c\ } &= \frac ab \cdot \frac 1c = \frac{a}{b\cdot c}
+            & \text{(breuk gedeeld door getal is maal in noemer)}\\
+            \\
+        \frac{a}{\ \frac{c}{d}\ } &= a\cdot \frac dc = \frac{a\cdot d}{c}
+            & \text{(getal gedeeld door breuk is maal omgekeerde)}\\
+            \\
+\end{align*}
+}
+\end{proposition}
+
+
+\begin{proposition}[Eenvoudige  gevolgen]\label{eig:rekenregels_breuken2}
+    \[
+        \begin{array}{rll}
+        a + c &= d\cdot (\frac ad +\frac cd)
+        & (\text{niet bestaande factor buiten haakjes brengen})\\
+        a  &= \frac a1
+        & (\text{van 'geen breuk' toch 'breuk' maken})\\
+        a  &= \frac {1}{1/a}
+        & (\text{van 'geen breuk' toch 'breuk' maken (variant)})\\
+        a\cdot b  &= \frac {a}{1/b}
+        & (\text{van een product een breuk maken})\\
+        \frac ab  &= a\cdot \frac 1b
+        & (\text{van een breuk een product maken})\\
+        a\cdot b = 1  &\iff a = \frac 1b
+        & (\text{van een product een breuk maken (variant)})\\
+        \end{array}
+    \]
+\end{proposition}
+
+herschrijven: 
+
+je kan een niet bestaande factor buiten haakjes brengen 
+
+
+Je kan van 'geen breuk' toch een breuk maken 
+
+Je kan van een product een breuk maken 
+
+
+Je kan van een breuk een product maken 
+
+
+
+
+
+
+
+Bij het rekenen met breuken zijn er enkele foutieve operaties die voor leerlingen soms erg aanlokkelijk zijn. 
+Doe jezelf (en je leerkracht...) een plezier en overtuig jezelf dat devolgende uitdrukkingen verkeerd zijn. 
+
+
+\begin{remark}[Vaak gemaakte fouten]\nl \label{eig:niet-rekenregels_breuken}
+     
+    \textit{in het algemeen niet}:
+    \\
+    \\
+    \[
+    \begin{aligned}
+        \frac{a}{b+c} &=    \frac{a}{b} + \frac{a}{c}\\
+        \frac{a}{a+1} &=    \frac{\cancel{a}}{\cancel{a}+1}  = \frac{1}{1+1} = \frac{1}{2}\\
+    \end{aligned}
+    \]
+
+\end{remark}
+
+\end{document}

@@ -1,0 +1,110 @@
+\documentclass{ximera}
+\input{../../preamble}
+\addPrintStyle{..}
+\begin{document}
+	\author{Wiskundeplan}
+	\xmtitle{Theorie Ontbinden in factoren }{}
+
+
+Ontbinden in factoren betekent: een som (van termen) omzetten in een product (van factoren). Er bestaan hiervoor verschillende methodes. We ontbinden altijd zo ver mogelijk.
+
+
+\begin{proposition} Afzonderen
+
+Voor het rekenen met letters en reële getallen geldt:
+\[
+    \begin{array}{rclr}
+        ac+ad      &=&  a(c+d)   \\
+    \end{array}
+    \]
+    
+    Deze operatie is de 'omgekeerde' richting van de distributiviteits eigenschap. 
+\end{proposition}
+
+\begin{example}       
+    \begin{question} \( 24x^3 - 15x^2 + 3x  =\answer[onlineshowanswerbutton]{ 3x(8x^2 - 5x + 1) } \) \end{question}
+    \begin{question} \( 6x^5 + 13x^2 + 2x^2 =\answer[onlineshowanswerbutton]{ x^2(6x^3 +13x + 2)} \) \end{question}
+    \begin{question} \( 10x^2 + 4x + 2      =\answer[onlineshowanswerbutton]{ 2(5x^2 +2x +1)    } \) \end{question}
+\end{example}
+
+Soms kan je door zelf haakjes toe te voegen, bij een deel van de termen een factor afzonderen.
+Het is mogelijk dat dit toelaat om daarna verder te vereenvoudigen zoals volgend voorbeeld illustreert:
+
+\begin{example} Samennemen 2 aan 2 
+\[ 
+\begin{array}{rclr}
+    3x^3 - 6x^2 + x - 2 &=& (3x^3 - 6x^2) + (x - 2)\\
+    &=& 3x^2(x - 2) + (x - 2)\\
+    &=& (x - 2)(3x^2 + 1)
+\end{array}  
+\]
+
+Merk op dat het ook mogelijk is om de haakjes anders te plaatsen: 
+
+\[ 
+\begin{array}{rclr}
+    3x^3 - 6x^2 + x - 2 &=& (- 6x^2 -2) + (3x^2 + x)\\
+    &=& -2(3x^2 + 1) + x(3x^2 + 1)\\
+    &=& (3x^2 + 1)(x - 2)
+\end{array}  
+\]
+\end{example}
+
+
+
+
+De distributiviteitseigenschap toepassen levert devolgende gelijkheden, gekend als 'merkwaardige producten'. 
+
+\begin{proposition} Merkwaardige producten 
+
+Voor het rekenen met letters en reële getallen geldt:    
+    \[
+    \begin{array}{rclr}
+        (a+b)^2    &=& a^2+2ab+b^2         &\text{(kwadraat van een som)}\\
+        (a-b)^2    &=& a^2-2ab+b^2         &\text{(kwadraat van verschil via $(a+(-b))^2$)}\\
+        a^2-b^2  &=&  (a+b)(a-b)  &      \text{(verschil van twee kwadraten)}\\[1cm]
+        (a+b)^3 &=& a^3+3a^2b+3ab^2+b^3 &\text{(derdemacht van een som)}\\
+        (a-b)^3 &=& a^3-3a^2b+3ab^2-b^3 &\text{(derdemacht van een verschil)}\\
+    \end{array}
+    \]
+
+
+    
+\end{proposition}
+
+\begin{example}
+    \begin{question} \( 4x^2 + 12xy + 9y^2   =\answer[onlineshowanswerbutton]{(2x + 3y)^2                   } \)\end{question}
+    \begin{question} \( (3-2x)^2             =\answer[onlineshowanswerbutton]{9 - 12x + 4x^2              } \)\end{question}
+    \begin{question} \( 25x^2 - 3            =\answer[onlineshowanswerbutton]{(5x - \sqrt{3})(5x + \sqrt{3})} \)\end{question}
+    \begin{question} \( t^3 - 6t^2 + 12t - 8 =\answer[onlineshowanswerbutton]{(t - 2)^3                     } \)\end{question}
+\end{example}
+
+
+\begin{remark} Een merkwaardige visualisering
+
+Het merkwaardige product \((a+b)^2 = a^2+2ab+b^2\) kan visueel worden voorgesteld.
+
+\geogebra{yjajmaxb}{893}{451}
+\end{remark}
+
+
+% De uitleg van wiskundeplan 
+
+% \begin{example}
+%     \item \textbf{Afzonderen} \\
+%     \( 24x^3 - 15x^2 + 3x = 3x(8x^2 - 5x + 1) \)
+    
+%     \item \textbf{Merkwaardige producten}
+%     \begin{itemize}
+%         \item \( a^2 - b^2 = (a - b)(a + b) \) \quad \( 25x^2 - 3 = (5x - \sqrt{3})(5x + \sqrt{3}) \)
+%         \item \( a^2 \pm 2ab + b^2 = (a \pm b)^2 \) \quad \( 4x^2 + 12xy + 9y^2 = (2x + 3y)^2 \)
+%         \item \( a^3 \pm 3a^2b + 3ab^2 \pm b^3 = (a \pm b)^3 \) \quad \( t^3 - 6t^2 + 12t - 8 = (t - 2)^3 \)
+%     \end{itemize}
+    
+%     \item \textbf{Samennemen 2 aan 2} \\
+%     \( 3x^3 - 6x^2 + x - 2 = (3x^3 - 6x^2) + (x - 2) \) \\
+%     \( = 3x^2(x - 2) + (x - 2) \) \\
+%     \( = (x - 2)(3x^2 + 1) \)
+% \end{example}
+
+\end{document}

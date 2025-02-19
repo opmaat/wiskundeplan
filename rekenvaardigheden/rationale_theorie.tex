@@ -1,0 +1,92 @@
+\documentclass{ximera}
+\input{../../preamble}
+\addPrintStyle{..}
+\begin{document}
+	\author{Wiskundeplan}
+	\xmtitle{Theorie Ontbinden in factoren }{}
+
+Rationale vormen of gebroken lettervormen zijn ``breuken met letters''. Met de rekenregels voor breuken en het ontbinden in factoren kunnen deze uitdrukkingen vereenvoudigd worden. 
+De belangrijkste rekentechnieken worden overlopen a.d.h.v enkele voorbeelden. 
+
+
+\begin{example} Vereenvoudigen 
+
+\begin{remark}
+    \begin{enumerate}
+        \item Ontbind eerst de teller en de noemer in factoren. 
+        \item Deel vervolgens de teller en noemer door hun gemeenschappelijke factoren. 
+    \end{enumerate}
+\end{remark}
+ 
+    \begin{question} \( \frac{a^2 b}{5ab^3}                                     =\answer[onlineshowanswerbutton]{ \frac{a}{5b^2}                                                   } \) \end{question}
+    \begin{question} \( \frac{a - b}{a^2 - b^2}                                 =\answer[onlineshowanswerbutton]{\frac{a - b}{(a - b)(a + b)} = \frac{1}{a + b}                    } \) \end{question}
+    \begin{question} \( \frac{-x^3 + x^2 + 2x - 2}{x^2 - 1}                     =\answer[onlineshowanswerbutton]{ \frac{(x - 1)(-x^2 + 2)}{(x - 1)(x + 1)} = \frac{-x^2 + 2}{x + 1}} \) \end{question}   
+\end{example}
+
+
+\begin{example} Optellen van twee rationale vormen 
+    \begin{remark}
+        \begin{enumerate}
+            \item Ontbind de noemers in factoren.
+            \item Zet de breuken op gelijke noemer: dit is het kleinste gemeen veelvoud van de factoren in de noemers.
+            \item Tel de tellers op en behoud de noemers. (De noemers blijven standaard ontbonden.)
+            \item Vereenvoudig door gemeenschappelijke factoren te schrappen. 
+        \end{enumerate}
+    \end{remark} 
+    \begin{question}
+        \[
+        \begin{array}{rclr}
+            \frac{1}{a - b} + \frac{3}{b - a}\\
+            &=& \frac{1}{a - b} + \frac{-3}{a - b}\\
+            &=& \frac{1 - 3}{a - b}\\
+            &=& \frac{-2}{a - b}            
+        \end{array}
+        \]
+    \end{question}
+    \begin{question}
+        \[
+         = \frac{-1}{x^2 + 2x} + \frac{2}{x^2 - 4} = \frac{-1}{x(x + 2)} + \frac{2}{(x - 2)(x + 2)}
+         = \frac{-1}{x(x + 2)} + \frac{2(x - 2)}{(x - 2)(x + 2)} 
+         = \frac{-1}{x(x + 2)} + \frac{2x}{x(x - 2)(x + 2)}
+         = \frac{-x + 2 + 2x}{x(x - 2)(x + 2)}
+         = \frac{x + 2}{x(x - 2)(x + 2)}
+         = \frac{1}{x(x - 2)}
+    \]
+
+    \end{question}
+
+\end{example}
+
+
+\begin{example} Vermenigvuldigen van twee rationale vormen 
+    \begin{remark}
+        \begin{enumerate}
+            \item Vermenigvuldig de tellers met elkaar en de noemers met elkaar.
+            \item Vergeet niet de uitkomst te vereenvoudigen.
+        \end{enumerate}
+    \end{remark}
+
+    \begin{question}
+        \( \frac{a^2 + 2ab + b^2}{a^2 - ab} \cdot \frac{3a^2}{2a + 2b} =\answer[onlineshowanswerbutton]{\frac{(a^2 + 2ab + b^2) \cdot 3a^2}{(a^2 - ab) \cdot (2a + 2b)} = \frac{(a + b)^2 \cdot 3a^2}{a(a - b) \cdot 2(a + b)} = \frac{3a(a + b)}{2(a - b)}} \)        
+    \end{question}
+    
+\end{example}
+
+
+
+\begin{example} Delen van twee rationale vormen. 
+    \begin{remark}
+        \begin{enumerate}
+            \item Maar gebruik van de rekenregel \( \frac{\frac{a}{b}}{\frac{c}{d}} = \frac{a}{b} \cdot \frac{d}{c} \). Dit mag enkel wanneer de teller en noemer allebei een breuk zijn. 
+        \end{enumerate}
+    \end{remark}
+
+    \begin{question}
+        \( \frac{a + 3}{1 + \frac{a}{a - 1}} =\answer[onlineshowanswerbutton]{\frac{a + 3}{\frac{a - 1 + a}{a - 1}} = \frac{a + 3}{\frac{2a - 1}{a - 1}} = (a + 3) \cdot \frac{a - 1}{2a - 1} = \frac{(a + 3)(a - 1)}{2a - 1}} \)    
+    \end{question}
+    
+\end{example}
+
+
+
+\end{document}
