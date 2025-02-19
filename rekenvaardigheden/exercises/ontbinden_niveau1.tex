@@ -74,19 +74,18 @@
     \end{xmmulticols}    
 \end{exercise}
 
- 
- 
 
- 
-
-\begin{exercise} Vul aan tot een merkwaardig product, indien mogelijk, en ontbind in dat geval
+\begin{exercise} Vul aan tot een merkwaardig product, indien mogelijk, en ontbind in dat geval.
+    % 20250219: BUG: brackets needed around \answer; ToBeSolved!!
+    % \begin{prompt} Gebruik \verb|/| als aanvullen tot een merkwaardig product niet mogelijk is. \end{prompt}
+    \renewcommand{\xmFixFormatLength}{31ex}
     \begin{xmmulticols}
-    \begin{question} \(9x^2 + \dots x + 16    =\answer[onlineshowanswerbutton]{24                     } \) \end{question}
-    \begin{question} \(a^2 - 6ab + \dots      =\answer[onlineshowanswerbutton]{9b^2                   } \) \end{question}
-    \begin{question} \dots \( y^4 - 42y^2 + 9 =\answer[onlineshowanswerbutton]{49                     } \) \end{question}
-    \begin{question} \(121x^2 - \dots x - 4   =\answer[onlineshowanswerbutton]{ \text{geen oplossing} } \) \end{question}
-    \begin{question} \(-81 - 4x^2 + \dots     =\answer[onlineshowanswerbutton]{36x                    } \) \end{question}
-    
+    \begin{question}  \xmFixFormat{\(9x^2 + {\answer{24}} x + 16    \)}  \(= \answer[onlineshowanswerbutton]{(3x+4)^2}\)       \end{question}
+    \begin{question}  \xmFixFormat{\(a^2 - 6ab + {\answer{9b^2 }}   \)}  \(= \answer[onlineshowanswerbutton]{(a-3b)^2}\)       \end{question}
+    \begin{question}  \xmFixFormat{\( {\answer{49}} y^4 - 42y^2 + 9 \)}  \(= \answer[onlineshowanswerbutton]{(7y^2+3)^2}\)     \end{question}
+    \begin{question}  \xmFixFormat{\(121x^2 - {\answer{0}} x - 4    \)}  \(= \answer[onlineshowanswerbutton]{(11x-2)(11x+2)}\) \end{question}
+    \begin{question}  \xmFixFormat{\(-81 - 4x^2 + {\answer{36x }}   \)}  \(= \answer[onlineshowanswerbutton]{-(2x-9)^2}\)      \end{question}
+    % Pas op: ook -36x zou een correct antwoord kunnen zijn ....
     \end{xmmulticols}    
 \end{exercise}
 
