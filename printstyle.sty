@@ -1213,8 +1213,9 @@
 \renewcommand{\formulevb}[2]{
 
   \begin{minipage}[c]{0.5\textwidth}\makebox[\textwidth][c]{\fcolorbox{\colordefinition!45!black}{\colordefinition!2!white}{$#1$}} \end{minipage}
-  \begin{minipage}{\dimexpr(\textwidth-0.5\textwidth)\relax}\makebox[\textwidth][c]{Vb: \colorbox{\colordefinition!5!white}{$#2$}} \end{minipage}
-}
+%   \begin{minipage}{\dimexpr(\textwidth-0.5\textwidth)\relax}\makebox[\textwidth][c]{\colorbox{\colordefinition!5!white}{$#2$}} \end{minipage}
+  \begin{minipage}{\dimexpr(\textwidth-0.5\textwidth)\relax}\makebox[\textwidth][c]{\fcolorbox{\colorexample!45!black}{\colorexample!2!white}{$#2$}} \end{minipage}
+  }
 
 \renewcommand{\Im}[1]{\text{Im}#1}
 \renewcommand{\Re}[1]{\text{Re}#1}
