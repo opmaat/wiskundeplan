@@ -1060,3 +1060,35 @@ blockquote {
 .xmformulevb .mathjax-inline {
     vertical-align: -0.5em;
 }
+
+
+.xmprev{
+    padding-block: 0rem;
+    padding-left: 1.8em;
+    padding-right: 0.2em;
+    color: black;
+}
+
+.xmnext {
+    padding-block: 0rem;
+    padding-left: 0.2em;
+    padding-right: 1.8em;
+    color: black;
+}
+
+
+.activity-title a {
+    color: white;
+    text-decoration: none;
+}
+
+/* tooltip next/previous */
+.xmhidden {
+    display: none;
+    position: absolute;
+    color: white;
+    background-color:  #383f47;
+    border: 2px solid;
+    border-radius: 3px;
+    padding: 5px;
+}
