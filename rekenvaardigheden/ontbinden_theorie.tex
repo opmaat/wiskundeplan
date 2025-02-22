@@ -7,7 +7,7 @@
     \label{xim:ontbinden_theorie}
 
 
-Ontbinden in factoren betekent: een som (van termen) omzetten in een product (van factoren). Er bestaan hiervoor verschillende methodes. We ontbinden altijd zo ver mogelijk.
+\textbf{Ontbinden in factoren} is het omzetten van een som (van termen) in een product (van factoren). Er bestaan hiervoor verschillende methodes. We ontbinden altijd zo ver mogelijk.
 
 
 \begin{proposition} Afzonderen 
@@ -20,12 +20,15 @@ Distributiviteit toepassen in omgekeerde richting noemen we \textbf{afzonderen}.
 \end{proposition}
 
 \begin{example}       
+    \begin{question} \( 24x^3 - 15x^2 + 3  =\answer[onlineshowanswerbutton]{ 3(8x^2 - 5x + 1) } \) \end{question}
     \begin{question} \( 24x^3 - 15x^2 + x  =\answer[onlineshowanswerbutton]{ x(24x^2 - 15x + 1) } \) \end{question}
     \begin{question} \( 24x^3 - 15x^2 + 3x  =\answer[onlineshowanswerbutton]{ 3x(8x^2 - 5x + 1) } \) \end{question}
     \begin{question} \( 24x^3 - 15x^2 + 3x^4  =\answer[onlineshowanswerbutton]{ 3x^2(x^2 + 8x - 5) } \) \end{question}
-    \begin{question} \( 6x^5 + 13x^2 + 2x^2 =\answer[onlineshowanswerbutton]{ x^2(6x^3 +13x + 2)} \) \end{question}
-    \begin{question} \( 10x^2 + 4x + 2      =\answer[onlineshowanswerbutton]{ 2(5x^2 +2x +1)    } \) \end{question}
 \end{example}
+\begin{exercise}
+    \begin{question} \( 6x^5 + 13x^2 + 2x^2 =\answer{ x^2(6x^3 +13x + 2)} \) \end{question}
+    \begin{question} \( 10x^2 + 4x + 2      =\answer{ 2(5x^2 +2x +1)    } \) \end{question}
+\end{exercise}
 
 Soms kan je door haakjes toe te voegen bij een deel van de termen een factor afzonderen.
 Dit speciale geval van afzonderen noemt men 'samennemen 2 aan 2'. 
@@ -58,7 +61,7 @@ De distributiviteitseigenschap toepassen levert enkele interessante gelijkheden.
 
 \begin{proposition} Merkwaardige producten 
 
-Voor het rekenen met letters en reële getallen geldt:    
+Voor het rekenen met lettervormen:    
     \[
     \begin{array}{rclr}
         (a+b)^2    &=& a^2+2ab+b^2         &\text{(kwadraat van een som)}\\
@@ -68,12 +71,22 @@ Voor het rekenen met letters en reële getallen geldt:
         (a-b)^3 &=& a^3-3a^2b+3ab^2-b^3 &\text{(derdemacht van een verschil)}\\
     \end{array}
     \]
-
-    \begin{proof}
-        Overtuig jezelf van de correctheid van deze rekenregels met hulp van de definities. 
-    \end{proof}
     
 \end{proposition}
+
+
+\begin{expandable}{proof}{Bewijs}
+    De eigenschappen volgen rechtstreeks uit de distributiviteitseigenschap en de definitie van machtsverheffing. 
+
+    \begin{itemize}
+        \item \( (a+b)^2 = (a+b)(a+b) = a^2 + ab + ba + b^2 = a^2 + ab + ab + b^2 = a^2 + 2ab + b^2 \)
+        \item \( (a-b)^2 = (a-b)(a-b) = a^2 - ab - ba + b^2 = a^2 - ab - ab + b^2 = a^2 - 2ab + b^2 \)
+        \item \( (a+b)(a-b) = a^2 -ab +ba - b^2 =  a^2 -ab +ab - b^2 = a^2 - b^2 \)
+        \item \( (a+b)^3 = (a+b)(a+b)^2 =(a+b)(a^2 + 2ab + b^2) = (a^3 + 2a^{2}b + ab^2)+(ba^2 + 2ab^2 + b^3) = a^3+3a^2b+3ab^2+b^3 \)
+        \item \( (a-b)^3 = (a-b)(a-b)^2 =(a-b)(a^2 - 2ab + b^2) = (a^3 - 2a^{2}b + ab^2)-(-ba^2 + 2ab^2 - b^3) = a^3-3a^2b+3ab^2-b^3 \)
+    \end{itemize}
+\end{expandable}
+    
 
 \begin{example}
     \begin{question} \( 4x^2 + 12xy + 9y^2   =\answer[onlineshowanswerbutton]{(2x + 3y)^2                   } \)\end{question}
