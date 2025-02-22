@@ -789,6 +789,7 @@ div[class*="-content"] {
 	/* background-color: #002eff33; */
 	background-color: #9cb3c0;
 	border-radius: 5pt;
+	width: fit-content;
 }
 
 .xmcolorbox {
