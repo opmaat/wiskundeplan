@@ -786,7 +786,8 @@ div[class*="-content"] {
 }
 
 .xmformulevb table tr td:nth-child(3) {
-	background-color: #002eff33;
+	/* background-color: #002eff33; */
+	background-color: #9cb3c0;
 	border-radius: 5pt;
 }
 
@@ -1043,4 +1044,18 @@ blockquote {
 /* color exercises in toc */
 .toc .card.activity-card.section {
     background-color: rgb(200 202 203 / 25%);
+}
+
+.proof::before {
+    content: "bewijs:";
+    display: inline;
+    text-transform: capitalize;
+    font-weight: bold;
+    padding-right: 0.5em;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+}
+
+/* Horrible Hack: default alignment is somehow worg ??? */
+.xmformulevb .mathjax-inline {
+    vertical-align: -0.5em;
 }
