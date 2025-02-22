@@ -6,7 +6,7 @@
 	\xmtitle{Rekenen met breuken}{}
 
 Deze pagina geeft een overzicht van de rekenregels voor breuken. 
-De focus ligt op rekenvaardigheid, voor een theoretisch meer nauwkeurige bespreken verwijzen we door naar een handboek. 
+De focus ligt op rekenvaardigheid. Voor meer nauwkeurige en theoretische bespreking verwijzen we door naar een handboek. 
 
 
 \begin{definition}\label{def:breuken}\nl
@@ -18,19 +18,19 @@ We noemen $a$ de \textbf{teller} en $b$ de \textbf{noemer}.
 Zodra de noemers verschillend zijn van $0$, geldt:
 \begin{align*}
         \important{\frac{a}{b} = \frac{c}{d}}  &\iff \important{ad = bc}
-             &\text{(gelijkheid van (getalwaarde van) breuken (kruisproduct))}
+             &\text{gelijkheid van breuken}
              %\label{def: gelijkwaardigheid breuken}
              \\[2mm]
         \frac{a}{b}+\frac{c}{d} \quad&\perdef\quad \frac{ad+cb}{bd}
-             &\text{ (optelling (op gelijke noemer brengen))}
+             &\text{optelling}
              %\label{def:optelling breuken}
              \\[2mm]
         \frac{a}{b} \cdot \frac{c}{d} \quad&\perdef\quad \frac{a\cdot c}{b\cdot d}
-             &\text{(vermenigvuldiging (teller $\times$ teller, noemer $\times$ noemer)) }
+             &\text{vermenigvuldiging}
              %\label{def: vermenigvuldiging breuken}
              \\[2mm]
         \frac{a}{b} : \frac{c}{d} \quad&\perdef\quad \frac ab \cdot \frac dc = \frac{a\cdot d}{b\cdot c}
-             &\text{(deling (maal omgekeerde))}
+             &\text{deling}
              %\label {def: deling breuken}
 \end{align*}
 
@@ -38,7 +38,7 @@ Zodra de noemers verschillend zijn van $0$, geldt:
 
 
 
-Deze definities geven aanleiding tot een hele reeks rekenregels: 
+Uit deze definities volgen enkele belangrijke rekenregels: 
 
 \begin{proposition}\label{eig:rekenregels_breuken}\nl
  
@@ -79,61 +79,90 @@ Deze definities geven aanleiding tot een hele reeks rekenregels:
             \\
 \end{align*}
 }
+
+\begin{proof}
+    Overtuig jezelf van de correctheid van deze rekenregels met hulp van de definities. 
+\end{proof}
 \end{proposition}
 
 
-\begin{proposition}[Eenvoudige  gevolgen]\label{eig:rekenregels_breuken2}
-    \[
-        \begin{array}{rll}
-        a + c &= d\cdot (\frac ad +\frac cd)
-        & (\text{niet bestaande factor buiten haakjes brengen})\\
-        a  &= \frac a1
-        & (\text{van 'geen breuk' toch 'breuk' maken})\\
-        a  &= \frac {1}{1/a}
-        & (\text{van 'geen breuk' toch 'breuk' maken (variant)})\\
-        a\cdot b  &= \frac {a}{1/b}
-        & (\text{van een product een breuk maken})\\
-        \frac ab  &= a\cdot \frac 1b
-        & (\text{van een breuk een product maken})\\
-        a\cdot b = 1  &\iff a = \frac 1b
-        & (\text{van een product een breuk maken (variant)})\\
-        \end{array}
-    \]
+
+Er zijn ook enkele minder voor de hand liggende operaties mogelijk die in oefeningen vaak handig blijken: 
+
+
+% \begin{proposition}[Eenvoudige  gevolgen]\label{eig:rekenregels_breuken2}
+%     \[
+%         \begin{array}{rll}
+%         a + c &= d\cdot (\frac ad +\frac cd)
+%         & (\text{niet bestaande factor buiten haakjes brengen})\\
+%         a  &= \frac a1
+%         & (\text{van 'geen breuk' toch 'breuk' maken})\\
+%         a  &= \frac {1}{1/a}
+%         & (\text{van 'geen breuk' toch 'breuk' maken (variant)})\\
+%         a\cdot b  &= \frac {a}{1/b}
+%         & (\text{van een product een breuk maken})\\
+%         \frac ab  &= a\cdot \frac 1b
+%         & (\text{van een breuk een product maken})\\
+%         a\cdot b = 1  &\iff a = \frac 1b
+%         & (\text{van een product een breuk maken (variant)})\\
+%         \end{array}
+%     \]
+% \end{proposition}
+
+
+
+\begin{proposition} Je kan altijd 
+    
+    \begin{center}
+        \begin{tabular}{cl}          
+            \( a + c = d\cdot \left(\frac{a}{d} + \frac{c}{d} \right) \)&
+            een niet bestaande factor buiten haakjes brengen.\\ [5mm]
+            
+            \( a  = \frac{a}{1} = \frac {1}{\frac{1}{a}}\)&
+            van 'geen breuk' toch een breuk maken.\\ [5mm]
+            
+            \( a\cdot b  = \frac{a}{\frac{1}{b}}\)&
+            van een product een breuk maken. \\ [5mm]
+            
+            \( \frac{a}{b}  = a\cdot \frac{1}{b}\)&
+            van een breuk een product maken. \\
+            
+        \end{tabular}
+    \end{center}
 \end{proposition}
-
-herschrijven: 
-
-je kan een niet bestaande factor buiten haakjes brengen 
-
-
-Je kan van 'geen breuk' toch een breuk maken 
-
-Je kan van een product een breuk maken 
-
-
-Je kan van een breuk een product maken 
-
-
-
-
-
 
 
 Bij het rekenen met breuken zijn er enkele foutieve operaties die voor leerlingen soms erg aanlokkelijk zijn. 
-Doe jezelf (en je leerkracht...) een plezier en overtuig jezelf dat devolgende uitdrukkingen verkeerd zijn. 
+Doe jezelf (en je leerkracht...) een plezier en overtuig jezelf dat de volgende uitdrukkingen verkeerd zijn. 
 
 
-\begin{remark}[Vaak gemaakte fouten]\nl \label{eig:niet-rekenregels_breuken}
-     
-    \textit{in het algemeen niet}:
-    \\
-    \\
-    \[
-    \begin{aligned}
-        \frac{a}{b+c} &=    \frac{a}{b} + \frac{a}{c}\\
-        \frac{a}{a+1} &=    \frac{\cancel{a}}{\cancel{a}+1}  = \frac{1}{1+1} = \frac{1}{2}\\
-    \end{aligned}
-    \]
+
+% \begin{remark}[Vaak gemaakte fouten]\nl \label{eig:niet-rekenregels_breuken}
+    
+
+% \begin{remark}
+% \textit{in het algemeen niet}:
+
+% \renewcommand\CancelColor{\color{red}}
+
+
+%   $ \xcancel{ \frac{a}{b+c} = \frac{a}{b} + \frac{a}{c} } $ 
+
+
+%     $ \frac{a}{a+1} = \frac{\cancel{a}}{\cancel{a}+1}  = \frac{1}{1+1} = \frac{1}{2} $
+
+% \end{remark}
+
+\begin{remark}
+\textit{in het algemeen geldt niet}:
+
+\renewcommand\CancelColor{\color{red}}
+
+
+  $ \frac{a}{b+c} \xcancel{=} \frac{a}{b} + \frac{a}{c} $ 
+
+
+$ \frac{a}{a+1} \xcancel{=} \frac{\cancel{a}}{\cancel{a}+1}  \xcancel{=} \frac{1}{1+1} = \frac{1}{2} $
 
 \end{remark}
 
