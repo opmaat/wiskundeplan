@@ -1038,3 +1038,9 @@ blockquote {
 .wrapfig-l {
     float: left;
 }
+
+
+/* color exercises in toc */
+.toc .card.activity-card.section {
+    background-color: rgb(200 202 203 / 25%);
+}
