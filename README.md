@@ -1,2 +1,9 @@
-# wiskunde.opmaat
-LaTeX broncode van het open source project wiskunde.opmaat.org 
+# Branch 'wiskundeplan' (en afgeleiden...)
+
+Deze branch bevat een Ximeraversie van het onderdeel 'rekenvaardigheden' van wiskundeplan.be.
+
+De Github action is aangepast zodat de cursus gepubliceerd wordt op
+
+http://wiskunde.opmaat.org/wiskundeplan/rekenvaardigheden
+
+
