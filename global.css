@@ -1007,6 +1007,11 @@ img.brandlogo {
     font-family: "Times New Roman", Times, serif;
 }
 
+/* hack: empty square left of title ...??? */
+.main-inhoud div.empty {
+    background-color: #526a80;
+}
+
 .main-inhoud .activity-title {
 	background-color: #526a80;
 }
@@ -1046,7 +1051,7 @@ blockquote {
 .toc .card.activity-card.section {
     background-color: rgb(200 202 203 / 25%);
 }
-
+/* 
 .proof::before {
     content: "bewijs:";
     display: inline;
@@ -1054,7 +1059,7 @@ blockquote {
     font-weight: bold;
     padding-right: 0.5em;
     font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-}
+} */
 
 /* Horrible Hack: default alignment is somehow worg ??? */
 .xmformulevb .mathjax-inline {
