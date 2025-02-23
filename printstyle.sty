@@ -82,6 +82,8 @@
 \providebool{printactivityurl}
 \providebool{printcontinuouspagenumbers}
 
+
+
 % for PDF by activity, it makes sense not to include the title, as it is in the header already
 \printactivitytitletrue   % overwrite AFTER loading printstyle ...
 
@@ -1236,6 +1238,9 @@
 \tcbuselibrary{skins,theorems}
 
 \def\qqarc{5pt}   % grootte van het boogje boven en onder de quyickquestion en denkvraag 
+
+
+\ifprintquickquestion
 \DeclareTcbTheorem{quickquestion}{Vlugge Vraag}{
     boxrule=0pt,
     boxsep=2pt,
@@ -1266,6 +1271,10 @@
         colframe=white,
     },
 }{qq}
+\else
+\RenewEnviron{quickquestion}{}
+\RenewEnviron{quickquestion*}{}
+\fi
 
 \DeclareTcbTheorem{denkvraag}{Om even over na te denken \ldots}{
     boxrule=0pt,
