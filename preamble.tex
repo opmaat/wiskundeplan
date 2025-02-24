@@ -342,8 +342,8 @@
 
 % om in voorbeelden/oefeningen de notatie voor afgeleiden te kunnen kiezen
 % Usage: \afg{(2\sin(x))}  (en wordt d/dx, of accent, of D )
-\newcommand{\afg}[1]{{#1}'}
-%\renewcommand{\afg}[1]{\frac{\mathrm{d}#1}{\mathrm{d}x}}   % include in relevant exercises ...
+ \newcommand{\afg}[1]{{#1}'}
+\renewcommand{\afg}[1]{\frac{\mathrm{d}}{\mathrm{d}x} \left(#1\right) }   % include in relevant exercises ...
 %\renewcommand{\afg}[1]{D{#1}}
 
 %
@@ -1199,4 +1199,6 @@
     \RenewDocumentCommand{\xmFixFormat}{ O{\xmFixFormatLength} O{\xmFixFormatPosition} m }
     {\HCode{\Hnewline<span class="xmFixFormat" style="display: inline-block; width: }#1\HCode{;">\Hnewline}#3{\HCode{\Hnewline</span>\Hnewline}}}
 \fi
+
+
 
