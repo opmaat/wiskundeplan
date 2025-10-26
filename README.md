@@ -1,9 +1,7 @@
-# Branch 'wiskundeplan' (en afgeleiden...)
+# Wiskundeplan 
 
-Deze branch bevat een Ximeraversie van het onderdeel 'rekenvaardigheden' van wiskundeplan.be.
+Het leermateriaal ontbinden in factoren en rationale lettervormen is beschikbaar via https://wiskunde.opmaat.org/wiskundeplan/rekenvaardigheden/rekenvaardigheden/ontbinden_theorie
 
-De Github action is aangepast zodat de cursus gepubliceerd wordt op
-
-http://wiskunde.opmaat.org/wiskundeplan/rekenvaardigheden
+Hier vindt je ook de LaTeX brondcode. 
 
 
