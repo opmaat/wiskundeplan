@@ -22,7 +22,7 @@
 
 /* wom activiy title: #383f47*/
 /* rgba(56, 63, 71, 0.50) */
-:root {
+/* :root {
 	--main-title: #FDAF3A;
 	--menu-part: #FDAF3A;
 	--accent: #F0C1BF;
@@ -30,7 +30,7 @@
 	--exercises: #383f47;
 	--menu-1: #d15399;
 	--menu-2:  #d15399;
-}
+} */
 
 img.brandlogo {
 	border-radius: 10px;	
@@ -43,52 +43,3 @@ img.xourselogo {
 	/* border-radius: 10px; */
 }
 
-
-.main-title {
-	background-color: var(--main-title);
-	color: white;
-	/* align-items: anchor-center; */
-}
-
-
-.toc .activity-card.active {
-    background-color: #383f47;
-    /* color: white;
-    border-color: #292b2c; */
-}
-
-.toc .part {
-    font-size: larger;
-    background-color: var(--menu-part);
-}
-
-.main-inhoud .activity-title {
-    background-color: #FDAF3A;
-}
-
-
-.main-inhoud .toc-search {
-    background-color: var(--main-title);
-}
-
-.exercise, .exercise-content, .exercise.ui-accordion-header {
-	--pba: var(--exercise-background-perc);
-	--pbo: var(--exercise-border-perc);
-	--r: var(--example-red);
-	--g: var(--example-green);
-	--b: var(--example-blue); 
-	
-	--background-color: rgba(56, 63, 71, 0.20);  
-	
-	--border-color: var(--exercises);	
-	
-	background-color: var(--background-color);
-	border: 1px solid var(--border-color);
-	border-left: 12px solid var(--border-color);
-} 
-
-
-.btn-primary {
-    background-color: var(--exercises);
-    border: var(--exercises);
-}
