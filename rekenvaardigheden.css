@@ -15,9 +15,15 @@
 
 
 
+/* wiskundeplan geel % #FDAF3A  */
+/* rgb(253, 175, 58, 0,2) */
+
+
+
+/* wom activiy title: #383f47*/
 :root {
-	--main-title: #C9053F;
-	--menu-part: #C9053F;
+	--main-title: #FDAF3A;
+	--menu-part: #FDAF3A;
 	--accent: #F0C1BF;
 	--definition: #81BA27;
 	--exercises: #1c8fa2;
@@ -33,7 +39,7 @@ img.brandlogo {
 img.xourselogo {
 	max-height: 6rem;
 	max-width: 20vw;
-	border-radius: 10px;
+	/* border-radius: 10px; */
 }
 
 
@@ -45,7 +51,7 @@ img.xourselogo {
 
 
 .toc .activity-card.active {
-    background-color: var(--accent) !important;
+    background-color: #383f47;
     /* color: white;
     border-color: #292b2c; */
 }
@@ -55,19 +61,27 @@ img.xourselogo {
     background-color: var(--menu-part);
 }
 
+.main-inhoud .activity-title {
+    background-color: #FDAF3A;
+}
 
-	.exercise, .exercise-content, .exercise.ui-accordion-header {
-		--pba: var(--exercise-background-perc);
-		--pbo: var(--exercise-border-perc);
-		--r: var(--example-red);
-		--g: var(--example-green);
-		--b: var(--example-blue);
-		
-		--background-color: rgba(28, 143, 162, 0.2);  /* 50% opacity */
-		
-		--border-color: var(--exercises);	
-		
-		background-color: var(--background-color);
-		border: 1px solid var(--border-color);
-		border-left: 12px solid var(--border-color);
-	}
+
+.main-inhoud .toc-search {
+    background-color: var(--main-title);
+}
+
+/* .exercise, .exercise-content, .exercise.ui-accordion-header {
+	--pba: var(--exercise-background-perc);
+	--pbo: var(--exercise-border-perc);
+	--r: var(--example-red);
+	--g: var(--example-green);
+	--b: var(--example-blue); 
+	
+	--background-color: rgba(28, 143, 162, 0.2);  
+	
+	--border-color: var(--exercises);	
+	
+	background-color: var(--background-color);
+	border: 1px solid var(--border-color);
+	border-left: 12px solid var(--border-color);
+}  */
