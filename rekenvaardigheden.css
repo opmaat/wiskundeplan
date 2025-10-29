@@ -21,12 +21,13 @@
 
 
 /* wom activiy title: #383f47*/
+/* rgba(56, 63, 71, 0.50) */
 :root {
 	--main-title: #FDAF3A;
 	--menu-part: #FDAF3A;
 	--accent: #F0C1BF;
 	--definition: #81BA27;
-	--exercises: #1c8fa2;
+	--exercises: #383f47;
 	--menu-1: #d15399;
 	--menu-2:  #d15399;
 }
@@ -70,18 +71,24 @@ img.xourselogo {
     background-color: var(--main-title);
 }
 
-/* .exercise, .exercise-content, .exercise.ui-accordion-header {
+.exercise, .exercise-content, .exercise.ui-accordion-header {
 	--pba: var(--exercise-background-perc);
 	--pbo: var(--exercise-border-perc);
 	--r: var(--example-red);
 	--g: var(--example-green);
 	--b: var(--example-blue); 
 	
-	--background-color: rgba(28, 143, 162, 0.2);  
+	--background-color: rgba(56, 63, 71, 0.20);  
 	
 	--border-color: var(--exercises);	
 	
 	background-color: var(--background-color);
 	border: 1px solid var(--border-color);
 	border-left: 12px solid var(--border-color);
-}  */
+} 
+
+
+.btn-primary {
+    background-color: #1D8DB0;
+    border: #1D8DB0;
+}
