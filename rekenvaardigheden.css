@@ -89,6 +89,6 @@ img.xourselogo {
 
 
 .btn-primary {
-    background-color: #1D8DB0;
-    border: #1D8DB0;
+    background-color: var(--exercises);
+    border: var(--exercises);
 }
