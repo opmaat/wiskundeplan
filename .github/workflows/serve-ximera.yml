@@ -49,6 +49,7 @@ jobs:
           XIMERA_NAME: wiskundeplan*${{ github.ref_name }}
         run: |
           ls -alrt
+          chmod +x xmScripts/xmlatex
           # git config --global --add safe.directory "$(pwd)"
           # export COMMAND=./xmScripts/xmlatex.test
           ./xmScripts/xmlatex ghaction -j 4 
@@ -86,6 +87,7 @@ jobs:
         env:
           XIMERA_NAME:  wiskundeplan
         run: |
+          chmod +x xmScripts/xmlatex
           ./xmScripts/xmlatex name         
           ./xmScripts/xmlatex serve -f  # NOTE: -f  should not be needed ...        
           echo "✅ Published to $XIMERA_URL$XIMERA_NAME " >> $GITHUB_STEP_SUMMARY
